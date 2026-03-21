@@ -58,9 +58,18 @@ const metricsTable = [
 ];
 
 const usefulLinks = [
-  { label: "View Behance Presentation", url: "https://www.behance.net/gallery/242665667/Event-Branding-Youth-Equip-Bootcamp-Nsukka-Nigeria" },
-  { label: "View Event Photos", url: "https://drive.google.com/drive/folders/1E-8SyXB1UIrRb1lgJYI2YK0QtM8sN-NI" },
-  { label: "View Event Trailer", url: "https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/view?usp=drivesdk" },
+  {
+    label: "View Behance Presentation",
+    url: "https://www.behance.net/gallery/242665667/Event-Branding-Youth-Equip-Bootcamp-Nsukka-Nigeria",
+  },
+  {
+    label: "View Event Photos",
+    url: "https://drive.google.com/drive/folders/1E-8SyXB1UIrRb1lgJYI2YK0QtM8sN-NI",
+  },
+  {
+    label: "View Event Trailer",
+    url: "https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/view?usp=drivesdk",
+  },
 ];
 
 const eventDetails = [
@@ -85,9 +94,22 @@ const CaseStudyYouthEquip = () => (
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-[hsl(237,99%,40%)]/20 blur-[120px]" />
       </div>
       <div className="container mx-auto pt-28 pb-16 md:pt-36 md:pb-20 relative z-10">
-        <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-4xl">
-          <motion.nav variants={fadeUp} className="flex items-center gap-1.5 text-sm text-white/40 mb-6 flex-wrap">
-            <Link to="/case-study" className="hover:text-white/70 transition-colors">Case Studies</Link>
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+          className="max-w-4xl"
+        >
+          <motion.nav
+            variants={fadeUp}
+            className="flex items-center gap-1.5 text-sm text-white/40 mb-6 flex-wrap"
+          >
+            <Link
+              to="/case-study"
+              className="hover:text-white/70 transition-colors"
+            >
+              Case Studies
+            </Link>
             <ChevronRight size={14} />
             <span className="text-white/60">Youth Equip Bootcamp</span>
           </motion.nav>
@@ -107,7 +129,10 @@ const CaseStudyYouthEquip = () => (
             Filling a 300-Seat Bootcamp to Overflow Capacity in Just 5 Weeks
           </motion.h1>
 
-          <motion.p variants={fadeUp} className="text-base md:text-lg text-white/50">
+          <motion.p
+            variants={fadeUp}
+            className="text-base md:text-lg text-white/50"
+          >
             Youth Equip Bootcamp · Nsukka, Nigeria
           </motion.p>
         </motion.div>
@@ -126,7 +151,9 @@ const CaseStudyYouthEquip = () => (
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <p className="font-display text-3xl md:text-4xl text-[hsl(79,95%,45%)] mb-1">{m.value}</p>
+              <p className="font-display text-3xl md:text-4xl text-[hsl(79,95%,45%)] mb-1">
+                {m.value}
+              </p>
               <p className="text-sm text-white/60">{m.label}</p>
             </motion.div>
           ))}
@@ -139,14 +166,11 @@ const CaseStudyYouthEquip = () => (
       <div className="container mx-auto max-w-[760px] space-y-16">
         {/* Image Placeholder */}
         <AnimatedSection>
-          {/* TODO: Replace with actual event photo — upload to src/assets/cases/youth-equip/ */}
-          <div
-            className="w-full h-[220px] md:h-[400px] rounded-2xl flex flex-col items-center justify-center gap-3"
-            style={{ background: "linear-gradient(135deg, #09001d, #0105ca)" }}
-          >
-            <Camera size={32} className="text-white/30" />
-            <span className="text-white/30 text-sm">Event photos coming soon</span>
-          </div>
+          <img
+            src="/assets/cases/youth-equip/IMG-20251103-WA0087.jpg"
+            alt="Youth Equip Bootcamp"
+            className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
+          />
         </AnimatedSection>
 
         {/* Video Placeholder */}
@@ -154,12 +178,16 @@ const CaseStudyYouthEquip = () => (
           {/* TODO: Replace with actual video — upload to src/assets/cases/youth-equip/ */}
           <div
             className="w-full h-[220px] md:h-[320px] rounded-2xl flex flex-col items-center justify-center gap-3"
-            style={{ background: "linear-gradient(135deg, #09001d 60%, #0105ca)" }}
+            style={{
+              background: "linear-gradient(135deg, #09001d 60%, #0105ca)",
+            }}
           >
             <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
               <Play size={28} className="text-white/40 ml-1" />
             </div>
-            <span className="text-white/30 text-sm">Event trailer coming soon</span>
+            <span className="text-white/30 text-sm">
+              Event trailer coming soon
+            </span>
           </div>
         </AnimatedSection>
 
@@ -167,7 +195,14 @@ const CaseStudyYouthEquip = () => (
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            Youth Equip Bootcamp was a free, community-focused physical bootcamp held in Nsukka, Nigeria, designed to equip young people with practical skills, career guidance, and entrepreneurial knowledge. The event aimed to fill a 300-seat venue — a challenging target given the location, timeline, and reliance on organic and low-budget marketing channels. EventFlow was responsible for all event branding, content creation, and marketing execution across the 5-week campaign.
+            Youth Equip Bootcamp was a free, community-focused physical bootcamp
+            held in Nsukka, Nigeria, designed to equip young people with
+            practical skills, career guidance, and entrepreneurial knowledge.
+            The event aimed to fill a 300-seat venue — a challenging target
+            given the location, timeline, and reliance on organic and low-budget
+            marketing channels. EventFlow was responsible for all event
+            branding, content creation, and marketing execution across the
+            5-week campaign.
           </p>
         </AnimatedSection>
 
@@ -184,7 +219,9 @@ const CaseStudyYouthEquip = () => (
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="border-l-[3px] border-[hsl(0,100%,44%)] pl-5 py-3 bg-[hsl(0,100%,44%)]/5 rounded-r-xl"
               >
-                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed">{c}</p>
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed">
+                  {c}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -196,8 +233,12 @@ const CaseStudyYouthEquip = () => (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {eventDetails.map((d) => (
               <div key={d.label} className="py-2">
-                <p className="text-xs uppercase tracking-wider text-[hsl(252,100%,6%)]/50 mb-1">{d.label}</p>
-                <p className="text-[hsl(252,100%,6%)] font-semibold">{d.value}</p>
+                <p className="text-xs uppercase tracking-wider text-[hsl(252,100%,6%)]/50 mb-1">
+                  {d.label}
+                </p>
+                <p className="text-[hsl(252,100%,6%)] font-semibold">
+                  {d.value}
+                </p>
               </div>
             ))}
           </div>
@@ -229,7 +270,9 @@ const CaseStudyYouthEquip = () => (
                 <h3 className="font-display text-lg md:text-xl text-[hsl(252,100%,6%)] mb-3">
                   {a.title}
                 </h3>
-                <p className="text-[hsl(252,100%,6%)]/70 text-sm leading-relaxed">{a.desc}</p>
+                <p className="text-[hsl(252,100%,6%)]/70 text-sm leading-relaxed">
+                  {a.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -241,7 +284,9 @@ const CaseStudyYouthEquip = () => (
     <section className="bg-[hsl(252,100%,6%)] py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] text-center">
         <AnimatedSection>
-          <h2 className="font-display text-3xl md:text-4xl text-white mb-10">The Results</h2>
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-10">
+            The Results
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {[
               { value: "800+", label: "Registrations" },
@@ -255,13 +300,19 @@ const CaseStudyYouthEquip = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
               >
-                <p className="font-display text-4xl md:text-5xl text-[hsl(79,95%,45%)] mb-2">{s.value}</p>
+                <p className="font-display text-4xl md:text-5xl text-[hsl(79,95%,45%)] mb-2">
+                  {s.value}
+                </p>
                 <p className="text-white/60 text-sm">{s.label}</p>
               </motion.div>
             ))}
           </div>
           <p className="text-white/60 leading-relaxed max-w-xl mx-auto">
-            The bootcamp exceeded all expectations — generating over 800 registrations and approximately 500 physical attendees for a venue with a 300-seat capacity. The event reached overflow status, validating the effectiveness of the marketing strategy and brand execution.
+            The bootcamp exceeded all expectations — generating over 800
+            registrations and approximately 500 physical attendees for a venue
+            with a 300-seat capacity. The event reached overflow status,
+            validating the effectiveness of the marketing strategy and brand
+            execution.
           </p>
         </AnimatedSection>
       </div>
@@ -285,10 +336,16 @@ const CaseStudyYouthEquip = () => (
                 {metricsTable.map((row, i) => (
                   <tr
                     key={row.metric}
-                    className={i % 2 === 0 ? "bg-[hsl(252,100%,6%)]/5" : "bg-white"}
+                    className={
+                      i % 2 === 0 ? "bg-[hsl(252,100%,6%)]/5" : "bg-white"
+                    }
                   >
-                    <td className="px-5 py-3 text-[hsl(252,100%,6%)]/70">{row.metric}</td>
-                    <td className="px-5 py-3 text-[hsl(252,100%,6%)] font-semibold">{row.outcome}</td>
+                    <td className="px-5 py-3 text-[hsl(252,100%,6%)]/70">
+                      {row.metric}
+                    </td>
+                    <td className="px-5 py-3 text-[hsl(252,100%,6%)] font-semibold">
+                      {row.outcome}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -300,7 +357,12 @@ const CaseStudyYouthEquip = () => (
         <AnimatedSection>
           <SectionLabel>Impact</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            Youth Equip Bootcamp demonstrated that with the right branding and marketing system, even free community events can generate massive engagement and attendance. The campaign proved that professional-quality design and structured content rollout are not luxuries — they are essential tools for any event organizer looking to maximize reach and turnout, regardless of budget.
+            Youth Equip Bootcamp demonstrated that with the right branding and
+            marketing system, even free community events can generate massive
+            engagement and attendance. The campaign proved that
+            professional-quality design and structured content rollout are not
+            luxuries — they are essential tools for any event organizer looking
+            to maximize reach and turnout, regardless of budget.
           </p>
         </AnimatedSection>
 
@@ -312,7 +374,11 @@ const CaseStudyYouthEquip = () => (
           >
             <SectionLabel>Key Takeaway</SectionLabel>
             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-              Great events don't fill themselves. Even with a free ticket and a compelling topic, reaching and converting your target audience requires a structured marketing approach, strong visual branding, and consistent execution. The right system can turn a 300-seat goal into a 500-person overflow event.
+              Great events don't fill themselves. Even with a free ticket and a
+              compelling topic, reaching and converting your target audience
+              requires a structured marketing approach, strong visual branding,
+              and consistent execution. The right system can turn a 300-seat
+              goal into a 500-person overflow event.
             </p>
           </div>
         </AnimatedSection>
@@ -338,7 +404,8 @@ const CaseStudyYouthEquip = () => (
 
         {/* Footer note */}
         <p className="text-center text-xs italic text-[hsl(252,100%,6%)]/30">
-          This project was executed by the same creative team that now operates as EventFlow.
+          This project was executed by the same creative team that now operates
+          as EventFlow.
         </p>
       </div>
     </section>
@@ -354,7 +421,12 @@ const CaseStudyYouthEquip = () => (
             Planning an Event?
           </h2>
           <p className="text-white/60 mb-8 leading-relaxed">
-            Whether you're organizing a conference, bootcamp, workshop, or community event, the difference between an average turnout and a packed venue often comes down to the right marketing system. EventFlow helps event organizers structure their promotion, build audience momentum, and execute successful events from start to finish.
+            Whether you're organizing a conference, bootcamp, workshop, or
+            community event, the difference between an average turnout and a
+            packed venue often comes down to the right marketing system.
+            EventFlow helps event organizers structure their promotion, build
+            audience momentum, and execute successful events from start to
+            finish.
           </p>
           <a
             href={STRATEGY_EMAIL}
