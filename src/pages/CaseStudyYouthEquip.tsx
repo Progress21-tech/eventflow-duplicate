@@ -167,7 +167,7 @@ const CaseStudyYouthEquip = () => (
         {/* Image Placeholder */}
         <AnimatedSection>
           <img
-            src="/assets/cases/youth-equip/IMG-20251103-WA0087.jpg"
+            src="/assets/youth-equip/IMG-20251103-WA0087.jpg"
             alt="Youth Equip Bootcamp"
             className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
           />
