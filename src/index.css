@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 249 100% 6%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 249 100% 6%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 249 100% 6%;
+
+    --primary: 238 98% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 249 100% 6%;
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 249 30% 40%;
+
+    --accent: 78 91% 46%;
+    --accent-foreground: 249 100% 6%;
+
+    --destructive: 0 100% 44%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 238 98% 40%;
+
+    --radius: 0.625rem;
+
+    /* EventFlow brand tokens */
+    --ef-navy: 249 100% 6%;
+    --ef-blue: 238 98% 40%;
+    --ef-grey: 0 0% 90%;
+    --ef-red: 0 100% 44%;
+    --ef-lime: 78 91% 46%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dela Gothic One', cursive;
+  }
+}
+
+/* Animated gradient keyframes */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(1, 5, 202, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(1, 5, 202, 0.6); }
+}
+
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.05); }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, #09001d 0%, #0105ca 50%, #09001d 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  .gradient-cta {
+    background: linear-gradient(135deg, #0105ca 0%, #09001d 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 6s ease infinite;
+  }
+
+  .gradient-subtle {
+    background: linear-gradient(135deg, #09001d 0%, #0a0540 50%, #09001d 100%);
+    background-size: 200% 200%;
+    animation: gradient-shift 10s ease infinite;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .glass-navbar {
+    background: rgba(9, 0, 29, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .glass-navbar-transparent {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(1, 5, 202, 0.3);
+  }
+
+  .glow-red {
+    box-shadow: 0 0 20px rgba(223, 0, 0, 0.3);
+  }
+
+  .bg-ef-navy {
+    background-color: #09001d;
+  }
+
+  .bg-ef-grey {
+    background-color: #e6e6e6;
+  }
+
+  .bg-ef-blue {
+    background-color: #0105ca;
+  }
+
+  .text-ef-navy {
+    color: #09001d;
+  }
+
+  .text-ef-blue {
+    color: #0105ca;
+  }
+
+  .text-ef-lime {
+    color: #9ee106;
+  }
+
+  .text-ef-red {
+    color: #df0000;
+  }
+
+  .border-ef-blue {
+    border-color: #0105ca;
+  }
+
+  .border-ef-lime {
+    border-color: #9ee106;
+  }
+
+  .marquee-track {
+    animation: marquee 30s linear infinite;
+  }
+
+  .font-display {
+    font-family: 'Dela Gothic One', cursive;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .glow-border-blue {
+    box-shadow: 0 0 15px rgba(1, 5, 202, 0.2), inset 0 0 15px rgba(1, 5, 202, 0.05);
+  }
+}
