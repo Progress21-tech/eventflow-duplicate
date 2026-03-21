@@ -26,14 +26,14 @@ const metrics = [
 const challenges = [
   "Needed to fill a 300-seat venue for a free community bootcamp targeting youth in a university town with limited digital marketing infrastructure.",
   "Had only 5 weeks to build awareness, generate registrations, and create enough momentum for strong physical turnout.",
-  "Required a cohesive brand identity and marketing system that could cut through noise on social media and WhatsApp — the primary channels for the target audience.",
+  "Required a cohesive brand identity and marketing system that could cut through noise on social media and WhatsApp; the primary channels for the target audience.",
 ];
 
 const approaches = [
   {
     num: "01",
     title: "Bold Visual Identity & Event Branding",
-    desc: "Designed a high-energy, youth-focused brand identity for the bootcamp — vibrant colors, bold typography, and dynamic layouts that immediately communicated energy and relevance to the target audience. Every asset was crafted to stop the scroll and spark curiosity.",
+    desc: "Designed a high-energy, youth-focused brand identity for the bootcamp; vibrant colors, bold typography, and dynamic layouts that immediately communicated energy and relevance to the target audience. Every asset was crafted to stop the scroll and spark curiosity.",
   },
   {
     num: "02",
@@ -166,11 +166,16 @@ const CaseStudyYouthEquip = () => (
       <div className="container mx-auto max-w-[760px] space-y-16">
         {/* Image Placeholder */}
         <AnimatedSection>
-          <img
-            src="/assets/youth-equip/IMG-20251103-WA0087.jpg"
-            alt="Youth Equip Bootcamp"
-            className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
-          />
+          {/* TODO: Replace with actual event photo — upload to src/assets/cases/youth-equip/ */}
+          <div
+            className="w-full h-[220px] md:h-[400px] rounded-2xl flex flex-col items-center justify-center gap-3"
+            style={{ background: "linear-gradient(135deg, #09001d, #0105ca)" }}
+          >
+            <Camera size={32} className="text-white/30" />
+            <span className="text-white/30 text-sm">
+              Event photos coming soon
+            </span>
+          </div>
         </AnimatedSection>
 
         {/* Video Placeholder */}
@@ -198,8 +203,8 @@ const CaseStudyYouthEquip = () => (
             Youth Equip Bootcamp was a free, community-focused physical bootcamp
             held in Nsukka, Nigeria, designed to equip young people with
             practical skills, career guidance, and entrepreneurial knowledge.
-            The event aimed to fill a 300-seat venue — a challenging target
-            given the location, timeline, and reliance on organic and low-budget
+            The event aimed to fill a 300-seat venue; a challenging target given
+            the location, timeline, and reliance on organic and low-budget
             marketing channels. EventFlow was responsible for all event
             branding, content creation, and marketing execution across the
             5-week campaign.
@@ -308,7 +313,7 @@ const CaseStudyYouthEquip = () => (
             ))}
           </div>
           <p className="text-white/60 leading-relaxed max-w-xl mx-auto">
-            The bootcamp exceeded all expectations — generating over 800
+            The bootcamp exceeded all expectations; generating over 800
             registrations and approximately 500 physical attendees for a venue
             with a 300-seat capacity. The event reached overflow status,
             validating the effectiveness of the marketing strategy and brand
