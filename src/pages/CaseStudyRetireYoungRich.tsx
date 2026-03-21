@@ -38,12 +38,12 @@ const approaches = [
   {
     num: "02",
     title: "Comprehensive Asset Production",
-    desc: "Produced over 25 individual design assets including social media posts, WhatsApp status graphics, event banners, speaker introduction cards, certificates, name tags, branded event materials, and promotional content — all maintaining consistent brand language.",
+    desc: "Produced over 25 individual design assets including social media posts, WhatsApp status graphics, event banners, speaker introduction cards, certificates, name tags, branded event materials, and promotional content; all maintaining consistent brand language.",
   },
   {
     num: "03",
     title: "Multi-Platform Optimization",
-    desc: "Every design was optimized for its intended platform — whether that was Instagram stories, WhatsApp broadcasts, printed banners for the venue, or digital certificates for attendees. This ensured maximum visual impact at every touchpoint.",
+    desc: "Every design was optimized for its intended platform; whether that was Instagram stories, WhatsApp broadcasts, printed banners for the venue, or digital certificates for attendees. This ensured maximum visual impact at every touchpoint.",
   },
 ];
 
@@ -75,9 +75,18 @@ const testimonials = [
 ];
 
 const usefulLinks = [
-  { label: "View Event Photos", url: "https://drive.google.com/drive/folders/1NA891_UcTxJA55-ggMpqyE6zspxNpxL5" },
-  { label: "View Design Presentation", url: "https://drive.google.com/drive/folders/14648CigLqpknFV3qQBDiB_AGlCcGum9u" },
-  { label: "View Testimonial Materials", url: "https://drive.google.com/drive/folders/1MLl4shuvKTIEkK-Fmpnrd2715Rfn9bkO" },
+  {
+    label: "View Event Photos",
+    url: "https://drive.google.com/drive/folders/1NA891_UcTxJA55-ggMpqyE6zspxNpxL5",
+  },
+  {
+    label: "View Design Presentation",
+    url: "https://drive.google.com/drive/folders/14648CigLqpknFV3qQBDiB_AGlCcGum9u",
+  },
+  {
+    label: "View Testimonial Materials",
+    url: "https://drive.google.com/drive/folders/1MLl4shuvKTIEkK-Fmpnrd2715Rfn9bkO",
+  },
 ];
 
 const eventDetails = [
@@ -102,10 +111,23 @@ const CaseStudyRetireYoungRich = () => (
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-[hsl(237,99%,40%)]/20 blur-[120px]" />
       </div>
       <div className="container mx-auto pt-28 pb-16 md:pt-36 md:pb-20 relative z-10">
-        <motion.div variants={stagger} initial="hidden" animate="visible" className="max-w-4xl">
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+          className="max-w-4xl"
+        >
           {/* Breadcrumb */}
-          <motion.nav variants={fadeUp} className="flex items-center gap-1.5 text-sm text-white/40 mb-6 flex-wrap">
-            <Link to="/case-study" className="hover:text-white/70 transition-colors">Case Studies</Link>
+          <motion.nav
+            variants={fadeUp}
+            className="flex items-center gap-1.5 text-sm text-white/40 mb-6 flex-wrap"
+          >
+            <Link
+              to="/case-study"
+              className="hover:text-white/70 transition-colors"
+            >
+              Case Studies
+            </Link>
             <ChevronRight size={14} />
             <span className="text-white/60">How To Retire Young & Rich</span>
           </motion.nav>
@@ -122,10 +144,14 @@ const CaseStudyRetireYoungRich = () => (
             variants={fadeUp}
             className="font-display text-3xl md:text-4xl lg:text-5xl text-white mb-4 leading-[1.1]"
           >
-            How Strategic Event Branding Helped a ₦150,000 High-Ticket Bootcamp Surpass Attendance Targets
+            How Strategic Event Branding Helped a ₦150,000 High-Ticket Bootcamp
+            Surpass Attendance Targets
           </motion.h1>
 
-          <motion.p variants={fadeUp} className="text-base md:text-lg text-white/50">
+          <motion.p
+            variants={fadeUp}
+            className="text-base md:text-lg text-white/50"
+          >
             How To Retire Young & Rich Bootcamp · Lagos, Nigeria
           </motion.p>
         </motion.div>
@@ -144,7 +170,9 @@ const CaseStudyRetireYoungRich = () => (
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <p className="font-display text-3xl md:text-4xl text-[hsl(79,95%,45%)] mb-1">{m.value}</p>
+              <p className="font-display text-3xl md:text-4xl text-[hsl(79,95%,45%)] mb-1">
+                {m.value}
+              </p>
               <p className="text-sm text-white/60">{m.label}</p>
             </motion.div>
           ))}
@@ -163,7 +191,9 @@ const CaseStudyRetireYoungRich = () => (
             style={{ background: "linear-gradient(135deg, #09001d, #0105ca)" }}
           >
             <Camera size={32} className="text-white/30" />
-            <span className="text-white/30 text-sm">Event photos coming soon</span>
+            <span className="text-white/30 text-sm">
+              Event photos coming soon
+            </span>
           </div>
         </AnimatedSection>
 
@@ -171,7 +201,15 @@ const CaseStudyRetireYoungRich = () => (
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            How To Retire Young & Rich was a high-ticket physical bootcamp held in Lagos, Nigeria, organized by Nathanael Disu. The event was designed to teach attendees practical investment strategies and wealth-building techniques. With a ticket price of ₦150,000, the event needed branding that matched its premium positioning — credible, professional, and compelling enough to convert interest into ticket sales. EventFlow (then operating as the creative team behind the organizer's brand) was brought on to handle all visual branding and design execution across the entire campaign.
+            How To Retire Young & Rich was a high-ticket physical bootcamp held
+            in Lagos, Nigeria, organized by Nathanael Disu. The event was
+            designed to teach attendees practical investment strategies and
+            wealth-building techniques. With a ticket price of ₦150,000, the
+            event needed branding that matched its premium positioning;
+            credible, professional, and compelling enough to convert interest
+            into ticket sales. EventFlow (then operating as the creative team
+            behind the organizer's brand) was brought on to handle all visual
+            branding and design execution across the entire campaign.
           </p>
         </AnimatedSection>
 
@@ -188,7 +226,9 @@ const CaseStudyRetireYoungRich = () => (
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="border-l-[3px] border-[hsl(0,100%,44%)] pl-5 py-3 bg-[hsl(0,100%,44%)]/5 rounded-r-xl"
               >
-                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed">{c}</p>
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed">
+                  {c}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -200,8 +240,12 @@ const CaseStudyRetireYoungRich = () => (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {eventDetails.map((d) => (
               <div key={d.label} className="py-2">
-                <p className="text-xs uppercase tracking-wider text-[hsl(252,100%,6%)]/50 mb-1">{d.label}</p>
-                <p className="text-[hsl(252,100%,6%)] font-semibold">{d.value}</p>
+                <p className="text-xs uppercase tracking-wider text-[hsl(252,100%,6%)]/50 mb-1">
+                  {d.label}
+                </p>
+                <p className="text-[hsl(252,100%,6%)] font-semibold">
+                  {d.value}
+                </p>
               </div>
             ))}
           </div>
@@ -233,7 +277,9 @@ const CaseStudyRetireYoungRich = () => (
                 <h3 className="font-display text-lg md:text-xl text-[hsl(252,100%,6%)] mb-3">
                   {a.title}
                 </h3>
-                <p className="text-[hsl(252,100%,6%)]/70 text-sm leading-relaxed">{a.desc}</p>
+                <p className="text-[hsl(252,100%,6%)]/70 text-sm leading-relaxed">
+                  {a.desc}
+                </p>
               </motion.div>
             ))}
           </div>
@@ -245,7 +291,9 @@ const CaseStudyRetireYoungRich = () => (
     <section className="bg-[hsl(252,100%,6%)] py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] text-center">
         <AnimatedSection>
-          <h2 className="font-display text-3xl md:text-4xl text-white mb-10">The Results</h2>
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-10">
+            The Results
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             {[
               { value: "30+", label: "Registrations" },
@@ -259,13 +307,19 @@ const CaseStudyRetireYoungRich = () => (
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
               >
-                <p className="font-display text-4xl md:text-5xl text-[hsl(79,95%,45%)] mb-2">{s.value}</p>
+                <p className="font-display text-4xl md:text-5xl text-[hsl(79,95%,45%)] mb-2">
+                  {s.value}
+                </p>
                 <p className="text-white/60 text-sm">{s.label}</p>
               </motion.div>
             ))}
           </div>
           <p className="text-white/60 leading-relaxed max-w-xl mx-auto">
-            The bootcamp surpassed its attendance targets, with over 30 registrations for a ₦150,000-per-ticket event. The quality of the branding directly contributed to conversions — with at least one attendee explicitly stating they signed up after seeing one of the designs.
+            The bootcamp surpassed its attendance targets, with over 30
+            registrations for a ₦150,000-per-ticket event. The quality of the
+            branding directly contributed to conversions; with at least one
+            attendee explicitly stating they signed up after seeing one of the
+            designs.
           </p>
         </AnimatedSection>
       </div>
@@ -278,7 +332,12 @@ const CaseStudyRetireYoungRich = () => (
         <AnimatedSection>
           <SectionLabel>Impact</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            The branding work done for How To Retire Young & Rich didn't just make the event look good — it became a core driver of ticket sales and credibility. Premium visual identity gave attendees confidence that the event would deliver real value, and the consistency across all touchpoints created a seamless brand experience from first impression to post-event follow-up.
+            The branding work done for How To Retire Young & Rich didn't just
+            make the event look good; it became a core driver of ticket sales
+            and credibility. Premium visual identity gave attendees confidence
+            that the event would deliver real value, and the consistency across
+            all touchpoints created a seamless brand experience from first
+            impression to post-event follow-up.
           </p>
         </AnimatedSection>
 
@@ -301,9 +360,15 @@ const CaseStudyRetireYoungRich = () => (
                   boxShadow: "0 4px 24px rgba(1,5,202,0.06)",
                 }}
               >
-                <span className="font-display text-4xl text-[hsl(237,99%,40%)]/20 block mb-2">"</span>
-                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed mb-4">{t.quote}</p>
-                <p className="text-[hsl(252,100%,6%)] font-bold text-sm">{t.name}</p>
+                <span className="font-display text-4xl text-[hsl(237,99%,40%)]/20 block mb-2">
+                  "
+                </span>
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed mb-4">
+                  {t.quote}
+                </p>
+                <p className="text-[hsl(252,100%,6%)] font-bold text-sm">
+                  {t.name}
+                </p>
                 <p className="text-[hsl(252,100%,6%)]/50 text-xs">{t.role}</p>
               </motion.div>
             ))}
@@ -318,7 +383,12 @@ const CaseStudyRetireYoungRich = () => (
           >
             <SectionLabel>Key Takeaway</SectionLabel>
             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-              For high-ticket events, branding isn't a nice-to-have — it's a revenue driver. When your visual identity matches the value of your offer, it builds the trust and credibility needed to convert high-value ticket sales. Professional, consistent event branding can be the difference between an event that fills and one that falls short.
+              For high-ticket events, branding isn't a nice-to-have; it's a
+              revenue driver. When your visual identity matches the value of
+              your offer, it builds the trust and credibility needed to convert
+              high-value ticket sales. Professional, consistent event branding
+              can be the difference between an event that fills and one that
+              falls short.
             </p>
           </div>
         </AnimatedSection>
@@ -344,7 +414,8 @@ const CaseStudyRetireYoungRich = () => (
 
         {/* Footer note */}
         <p className="text-center text-xs italic text-[hsl(252,100%,6%)]/30">
-          This project was executed by the same creative team that now operates as EventFlow.
+          This project was executed by the same creative team that now operates
+          as EventFlow.
         </p>
       </div>
     </section>
@@ -360,7 +431,9 @@ const CaseStudyRetireYoungRich = () => (
             Planning a High-Impact Event?
           </h2>
           <p className="text-white/60 mb-8 leading-relaxed">
-            Whether you're organizing a conference, bootcamp, workshop, or premium training event, strong branding and marketing systems can dramatically improve your event's visibility and credibility.
+            Whether you're organizing a conference, bootcamp, workshop, or
+            premium training event, strong branding and marketing systems can
+            dramatically improve your event's visibility and credibility.
           </p>
           <a
             href={STRATEGY_EMAIL}
