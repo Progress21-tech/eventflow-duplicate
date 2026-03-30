@@ -201,15 +201,18 @@ const CaseStudyRetireYoungRich = () => (
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            How To Retire Young & Rich was a high-ticket physical bootcamp held
-            in Lagos, Nigeria, organized by Nathanael Disu. The event was
-            designed to teach attendees practical investment strategies and
-            wealth-building techniques. With a ticket price of ₦150,000, the
-            event needed branding that matched its premium positioning;
-            credible, professional, and compelling enough to convert interest
-            into ticket sales. EventFlow (then operating as the creative team
-            behind the organizer's brand) was brought on to handle all visual
-            branding and design execution across the entire campaign.
+            The How To Retire Young & Rich Bootcamp is a premium financial education workshop designed to help participants understand investing, wealth creation, and long-term financial
+l independence.
+
+            The bootcamp had been hosted several times previously, but the organizers wanted this
+edition to elevate the brand experience and attract stronger engagement for a high-ticket
+audience.
+
+            The EventFlow team was brought in to develop the complete visual and branding system for
+the event, ensuring that every promotional and physical asset communicated a premium,
+credible, and professional experience
+            
+            
           </p>
         </AnimatedSection>
 
