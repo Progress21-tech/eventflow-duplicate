@@ -24,26 +24,27 @@ const metrics = [
 ];
 
 const challenges = [
-  "Needed distinctive, high-quality event branding that justified the premium ₦150,000 ticket price and positioned the bootcamp as a credible, must-attend experience.",
-  "Required a comprehensive suite of design assets — from social media content to physical event materials — within a tight pre-event timeline.",
-  "Had to create a cohesive brand identity that could work across digital platforms, WhatsApp marketing, and on-site printed materials while maintaining consistency.",
+  "High-ticket workshops require strong brand credibility to convert registrations.",
+  "The event needed a cohesive visual identity across digital and physical assets.",
+  "Without strong branding and design consistency, premium events often struggle to communicate value to potential attendees.
+",
 ];
 
 const approaches = [
   {
     num: "01",
-    title: "Strategic Visual Identity Design",
-    desc: "Created a distinctive visual identity that conveyed the premium, high-value nature of the bootcamp. Every design element — from typography to color palette — was chosen to reinforce credibility and attract the target audience of aspiring investors and entrepreneurs.",
+    title: "Event Branding System",
+    desc: "The first step was developing a distinct brand identity for the event, ensuring that all marketing materials reflected the premium nature of the bootcamp.This included:event logo and visual identity consistent design language across materials premium visual styling aligned with the financial theme This foundation ensured that every promotional asset looked cohesive and professional.",
   },
   {
     num: "02",
-    title: "Comprehensive Asset Production",
-    desc: "Produced over 25 individual design assets including social media posts, WhatsApp status graphics, event banners, speaker introduction cards, certificates, name tags, branded event materials, and promotional content; all maintaining consistent brand language.",
+    title: "Digital Promotional Assets",
+    desc: "The EventFlow team produced a wide range of digital promotional materials to support online marketing campaigns. Assets included: Social media promo flyers Speaker announcement graphics Countdown campaign creatives Carousel posts Personalized “I’ll be attending” graphics for registered participants. In total, 25+ social media graphics were created to sustain consistent promotion across platforms. These assets were used across: Instagram, WhatsApp, Facebook",
   },
   {
     num: "03",
-    title: "Multi-Platform Optimization",
-    desc: "Every design was optimized for its intended platform; whether that was Instagram stories, WhatsApp broadcasts, printed banners for the venue, or digital certificates for attendees. This ensured maximum visual impact at every touchpoint.",
+    title: "Physical Event Experience Design",
+    desc: "Beyond digital promotion, EventFlow designed several print and on-site experience materials to ensure the event environment matched the premium branding.These included: Stage backdrop design Roll-up banners Red carpet banner Souvenir bags Branded jotters Wristbands Table tent designs (30+ units) The goal was to ensure that every touchpoint; from the entrance to the session tables, reinforced the event’s brand identity.",
   },
 ];
 
