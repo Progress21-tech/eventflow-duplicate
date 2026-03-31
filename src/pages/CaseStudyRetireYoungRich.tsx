@@ -26,8 +26,7 @@ const metrics = [
 const challenges = [
   "High-ticket workshops require strong brand credibility to convert registrations.",
   "The event needed a cohesive visual identity across digital and physical assets.",
-  "Without strong branding and design consistency, premium events often struggle to communicate value to potential attendees.
-",
+  "Without strong branding and design consistency, premium events often struggle to communicate value to potential attendees.",
 ];
 
 const approaches = [
