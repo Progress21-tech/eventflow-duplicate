@@ -204,19 +204,19 @@ const CaseStudyRetireYoungRich = () => (
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-4">
             The How To Retire Young & Rich Bootcamp is a premium financial education workshop designed to help participants understand investing, wealth creation, and long-term financial
             independence.
-          </p><br />
+          </p>
           
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-4">
             The bootcamp had been hosted several times previously, but the organizers wanted this
             edition to elevate the brand experience and attract stronger engagement for a high-ticket
             audience.
-          </p><br />
+          </p>
           
            <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-4">
             The EventFlow team was brought in to develop the complete visual and branding system for
             the event, ensuring that every promotional and physical asset communicated a premium,
             credible, and professional experience.
-          </p><br />
+          </p>
         </AnimatedSection>
 
         {/* The Challenge */}
