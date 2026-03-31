@@ -24,6 +24,7 @@ const metrics = [
 ];
 
 const challenges = [
+  "The bootcamp was a high-ticket event priced at ₦150,000."
   "High-ticket workshops require strong brand credibility to convert registrations.",
   "The event needed a cohesive visual identity across digital and physical assets.",
   "Without strong branding and design consistency, premium events often struggle to communicate value to potential attendees.",
@@ -33,17 +34,17 @@ const approaches = [
   {
     num: "01",
     title: "Event Branding System",
-    desc: "The first step was developing a distinct brand identity for the event, ensuring that all marketing materials reflected the premium nature of the bootcamp.This included:event logo and visual identity consistent design language across materials premium visual styling aligned with the financial theme This foundation ensured that every promotional asset looked cohesive and professional.",
+    desc: "The first step was developing a distinct brand identity for the event, ensuring that all marketing materials reflected the premium nature of the bootcamp. This included: event logo and visual identity consistent design language across materials premium visual styling aligned with the financial theme. This foundation ensured that every promotional asset looked cohesive and professional.",
   },
   {
     num: "02",
     title: "Digital Promotional Assets",
-    desc: "The EventFlow team produced a wide range of digital promotional materials to support online marketing campaigns. Assets included: Social media promo flyers Speaker announcement graphics Countdown campaign creatives Carousel posts Personalized “I’ll be attending” graphics for registered participants. In total, 25+ social media graphics were created to sustain consistent promotion across platforms. These assets were used across: Instagram, WhatsApp, Facebook",
+    desc: "The EventFlow team produced a wide range of digital promotional materials to support online marketing campaigns. Assets included: Social media promo flyers, Speaker announcement graphics, Countdown campaign creatives, Carousel posts, Personalized “I’ll be attending” graphics for registered participants. In total, 25+ social media graphics were created to sustain consistent promotion across platforms. These assets were used across: Instagram, WhatsApp, Facebook.",
   },
   {
     num: "03",
     title: "Physical Event Experience Design",
-    desc: "Beyond digital promotion, EventFlow designed several print and on-site experience materials to ensure the event environment matched the premium branding.These included: Stage backdrop design Roll-up banners Red carpet banner Souvenir bags Branded jotters Wristbands Table tent designs (30+ units) The goal was to ensure that every touchpoint; from the entrance to the session tables, reinforced the event’s brand identity.",
+    desc: "Beyond digital promotion, EventFlow designed several print and on-site experience materials to ensure the event environment matched the premium branding.These included: Stage backdrop design, Roll-up banners, Red carpet banner, Souvenir bags, Branded jotters, Wristbands, Table tent designs (30+ units). The goal was to ensure that every touchpoint; from the entrance to the session tables, reinforced the event’s brand identity.",
   },
 ];
 
@@ -74,27 +75,12 @@ const testimonials = [
   },
 ];
 
-const usefulLinks = [
-  {
-    label: "View Event Photos",
-    url: "https://drive.google.com/drive/folders/1NA891_UcTxJA55-ggMpqyE6zspxNpxL5",
-  },
-  {
-    label: "View Design Presentation",
-    url: "https://drive.google.com/drive/folders/14648CigLqpknFV3qQBDiB_AGlCcGum9u",
-  },
-  {
-    label: "View Testimonial Materials",
-    url: "https://drive.google.com/drive/folders/1MLl4shuvKTIEkK-Fmpnrd2715Rfn9bkO",
-  },
-];
-
 const eventDetails = [
   { label: "Event", value: "How To Retire Young & Rich Bootcamp" },
-  { label: "Location", value: "Lagos, Nigeria" },
+  { label: "Location", value: " Radisson Blu Hotel, Ikeja, Lagos" },
   { label: "Format", value: "Physical Workshop" },
   { label: "Ticket Price", value: "₦150,000" },
-  { label: "Campaign Prep", value: "50 Days" },
+  { label: "Campaign Prep", value: "Less than 50 days before the event" },
 ];
 
 const SectionLabel = ({ children }: { children: string }) => (
@@ -152,7 +138,7 @@ const CaseStudyRetireYoungRich = () => (
             variants={fadeUp}
             className="text-base md:text-lg text-white/50"
           >
-            How To Retire Young & Rich Bootcamp · Lagos, Nigeria
+            How To Retire Young & Rich Bootcamp; Lagos, Nigeria
           </motion.p>
         </motion.div>
       </div>
@@ -320,11 +306,7 @@ const CaseStudyRetireYoungRich = () => (
             ))}
           </div>
           <p className="text-white/60 leading-relaxed max-w-xl mx-auto">
-            The bootcamp surpassed its attendance targets, with over 30
-            registrations for a ₦150,000-per-ticket event. The quality of the
-            branding directly contributed to conversions; with at least one
-            attendee explicitly stating they signed up after seeing one of the
-            designs.
+            For a high-ticket financial workshop, this represented a successful turnout and exceeded the organizers’ expectations based on previous editions.
           </p>
         </AnimatedSection>
       </div>
@@ -336,14 +318,32 @@ const CaseStudyRetireYoungRich = () => (
         {/* Impact */}
         <AnimatedSection>
           <SectionLabel>Impact</SectionLabel>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            The branding work done for How To Retire Young & Rich didn't just
-            make the event look good; it became a core driver of ticket sales
-            and credibility. Premium visual identity gave attendees confidence
-            that the event would deliver real value, and the consistency across
-            all touchpoints created a seamless brand experience from first
-            impression to post-event follow-up.
-          </p>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          The improved branding and visual consistency helped elevate the perceived quality of the event and strengthened its credibility.
+        </p>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          According to the event manager, the designs themselves even contributed to attracting new registrations.
+        </p>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          The professional presentation of the event across digital promotions and physical materials helped position the bootcamp as a serious and premium financial education experience.
+        </p>
+        </AnimatedSection>
+
+        {/*Client Feedback*/}
+         <AnimatedSection>
+          <SectionLabel>Client Feedback</SectionLabel>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          According to the convener, investment research analyst Nathanael Disu, the visual execution played a major role in the event’s success.
+        </p>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          The event manager highlighted that the visual assets played a role in attracting attention and registrations.
+        </p>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          Some participants discovered the event through the promotional designs and reached out to attend the bootcamp.
+        </p>
+         <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          This reinforced the importance of high-quality design and brand consistency in marketing premium events.
+        </p>
         </AnimatedSection>
 
         {/* Testimonials */}
@@ -388,34 +388,17 @@ const CaseStudyRetireYoungRich = () => (
           >
             <SectionLabel>Key Takeaway</SectionLabel>
             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-              For high-ticket events, branding isn't a nice-to-have; it's a
-              revenue driver. When your visual identity matches the value of
-              your offer, it builds the trust and credibility needed to convert
-              high-value ticket sales. Professional, consistent event branding
-              can be the difference between an event that fills and one that
-              falls short.
+             For premium workshops and high-ticket events, branding and visual presentation are not just aesthetics; they directly influence credibility and conversions.
+            </p>
+            <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+             For premium workshops and high-ticket events, branding and visual presentation are not just aesthetics; they directly influence credibility and conversions.
+            </p>
+             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+             By building a structured event branding system and consistent promotional assets, EventFlow helped elevate the How To Retire Young & Rich Bootcamp into a more professional and compelling experience for attendees.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Useful Links */}
-        <AnimatedSection>
-          <SectionLabel>Useful Links</SectionLabel>
-          <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-            {usefulLinks.map((l) => (
-              <a
-                key={l.label}
-                href={l.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-[hsl(237,99%,40%)]/30 text-[hsl(237,99%,40%)] text-sm font-semibold transition-all duration-300 hover:bg-[hsl(237,99%,40%)] hover:text-white hover:border-[hsl(237,99%,40%)] min-h-[44px]"
-              >
-                <ExternalLink size={14} />
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </AnimatedSection>
 
         {/* Footer note */}
         <p className="text-center text-xs italic text-[hsl(252,100%,6%)]/30">
