@@ -201,7 +201,7 @@ const CaseStudyRetireYoungRich = () => (
         {/* Overview */}
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-4">
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
             The How To Retire Young & Rich Bootcamp is a premium financial education workshop designed to help participants understand investing, wealth creation, and long-term financial
             independence.
           </p>
