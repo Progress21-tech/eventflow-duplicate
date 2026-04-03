@@ -156,10 +156,11 @@ const CaseStudyRetireYoungRich = () => (
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <p className="font-display text-3xl md:text-4xl text-[hsl(79,95%,45%)] mb-1">
-                {m.value}
-              </p>
-              <p className="text-sm text-white/60">{m.label}</p>
+              <p className="font-display text-lg md:text-xl text-[hsl(79,95%,45%)] mb-1">
+  {m.value}
+</p>
+<p className="text-xs text-white/60">{m.label}</p>
+
             </motion.div>
           ))}
         </div>
