@@ -398,25 +398,6 @@ const CaseStudyYouthEquip = () => (
           </div>
         </AnimatedSection>
 
-        {/* Useful Links */}
-        <AnimatedSection>
-          <SectionLabel>Useful Links</SectionLabel>
-          <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-            {usefulLinks.map((l) => (
-              <a
-                key={l.label}
-                href={l.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-[hsl(237,99%,40%)]/30 text-[hsl(237,99%,40%)] text-sm font-semibold transition-all duration-300 hover:bg-[hsl(237,99%,40%)] hover:text-white hover:border-[hsl(237,99%,40%)] min-h-[44px]"
-              >
-                <ExternalLink size={14} />
-                {l.label}
-              </a>
-            ))}
-          </div>
-        </AnimatedSection>
-
         {/* Footer note */}
         <p className="text-center text-xs italic text-[hsl(252,100%,6%)]/30">
           This project was executed by the same creative team that now operates
