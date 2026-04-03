@@ -24,7 +24,7 @@ const metrics = [
 ];
 
 const challenges = [
-  "The bootcamp was a high-ticket event priced at ₦150,000."
+  "The bootcamp was a high-ticket event priced at ₦150,000.",
   "High-ticket workshops require strong brand credibility to convert registrations.",
   "The event needed a cohesive visual identity across digital and physical assets.",
   "Without strong branding and design consistency, premium events often struggle to communicate value to potential attendees.",
