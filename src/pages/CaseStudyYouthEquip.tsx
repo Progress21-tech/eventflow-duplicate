@@ -32,18 +32,18 @@ const challenges = [
 const approaches = [
   {
     num: "01",
-    title: "Bold Visual Identity & Event Branding",
-    desc: "Designed a high-energy, youth-focused brand identity for the bootcamp; vibrant colors, bold typography, and dynamic layouts that immediately communicated energy and relevance to the target audience. Every asset was crafted to stop the scroll and spark curiosity.",
+    title: "Strategic Audience Mobilization",
+    desc: "Strategic Audience Mobilization. These ambassadors helped spread awareness organically within universities and student networks.",
   },
   {
     num: "02",
-    title: "Multi-Channel Content Strategy",
-    desc: "Executed a structured 5-week content rollout across Instagram, WhatsApp, and on-campus channels. Each week had themed content — speaker reveals, countdown graphics, testimonials from past editions, and registration reminders — building momentum toward event day.",
+    title: "Digital Promotion Infrastructure",
+    desc: "EventFlow built the digital infrastructure required to capture and nurture interest. This included: Landing page for event information, Online registration form, WhatsApp funnel for communication, Automated follow-ups and reminders. This ensured that every interested participant moved smoothly from awareness → registration → attendance.",
   },
   {
     num: "03",
-    title: "Community-Driven Growth Engine",
-    desc: "Leveraged WhatsApp groups, campus ambassadors, and word-of-mouth amplification to extend reach beyond paid channels. The quality of design assets made them highly shareable, turning registrants into organic promoters.",
+    title: "Multi-Channel Promotion",
+    desc: "The campaign used several coordinated channels to amplify visibility. Primary channels included: WhatsApp communities, Instagram promotion, Campus ambassador networks, Branded promo creatives, Strategic partnerships. This combination created both online reach and on-ground momentum.",
   },
 ];
 
@@ -57,24 +57,9 @@ const metricsTable = [
   { metric: "Design Assets Produced", outcome: "30+" },
 ];
 
-const usefulLinks = [
-  {
-    label: "View Behance Presentation",
-    url: "https://www.behance.net/gallery/242665667/Event-Branding-Youth-Equip-Bootcamp-Nsukka-Nigeria",
-  },
-  {
-    label: "View Event Photos",
-    url: "https://drive.google.com/drive/folders/1E-8SyXB1UIrRb1lgJYI2YK0QtM8sN-NI",
-  },
-  {
-    label: "View Event Trailer",
-    url: "https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/view?usp=drivesdk",
-  },
-];
-
 const eventDetails = [
   { label: "Event", value: "Youth Equip Bootcamp" },
-  { label: "Location", value: "Nsukka, Nigeria" },
+  { label: "Location", value: "Nsukka, Enugu State." },
   { label: "Format", value: "Physical Bootcamp" },
   { label: "Ticket Price", value: "Free" },
   { label: "Campaign Duration", value: "5 Weeks" },
@@ -199,15 +184,17 @@ const CaseStudyYouthEquip = () => (
         {/* Overview */}
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            Youth Equip Bootcamp was a free, community-focused physical bootcamp
-            held in Nsukka, Nigeria, designed to equip young people with
-            practical skills, career guidance, and entrepreneurial knowledge.
-            The event aimed to fill a 300-seat venue; a challenging target given
-            the location, timeline, and reliance on organic and low-budget
-            marketing channels. EventFlow was responsible for all event
-            branding, content creation, and marketing execution across the
-            5-week campaign.
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+           <strong>The Youth Equip Bootcamp</strong> was designed as a transformational learning experience for young people seeking clarity, practical skills, and mentorship for building meaningful careers and businesses.
+          </p>
+           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+           However, when the event planning began, it faced a major challenge: <strong>it was a first-time event with zero awareness and limited budget.</strong>
+          </p>
+           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+           EventFlow stepped in to structure the marketing, build the audience pipeline, and coordinate the execution from promotion to event-day experience.
+          </p>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+          The result: <strong>a completely filled venue with overflow attendance.</strong>
           </p>
         </AnimatedSection>
 
@@ -284,7 +271,30 @@ const CaseStudyYouthEquip = () => (
         </AnimatedSection>
       </div>
     </section>
-
+    
+     {/* Execution Team */}
+        <AnimatedSection>
+          <SectionLabel>Execution Team</SectionLabel>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+           EventFlow coordinated a multidisciplinary execution team consisting of about 15 core members, excluding additional volunteers.
+          </p>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+           Key roles included:
+           Design and visual creatives
+           Video production
+           Content creation
+           Social media management
+           Marketing coordination
+           Project management
+           Community management
+           Registration management
+           Logistics and operations
+        </p>
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+           This integrated team ensured that every aspect of the event experience was structured and professionally managed.
+        </p>
+        </AnimatedSection>
+    
     {/* Results */}
     <section className="bg-[hsl(252,100%,6%)] py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] text-center">
