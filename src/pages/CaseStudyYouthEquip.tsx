@@ -278,7 +278,7 @@ const CaseStudyYouthEquip = () => (
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8 mx-auto max-w sm:mx-6 md:mx-8 lg:mx-auto ">
            EventFlow coordinated a multidisciplinary execution team consisting of about 15 core members, excluding additional volunteers.
           </p>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8 mx-auto">
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8 mx-auto max-w sm:mx-6 md:mx-8 lg:mx-auto">
            Key roles included:
            Design and visual creatives
            Video production
@@ -290,7 +290,7 @@ const CaseStudyYouthEquip = () => (
            Registration management
            Logistics and operations
         </p>
-        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8 mx-auto">
+        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8 mx-auto max-w sm:mx-6 md:mx-8 lg:mx-auto">
            This integrated team ensured that every aspect of the event experience was structured and professionally managed.
         </p>
         </AnimatedSection>
