@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { MapPin, ArrowRight } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
-import logoImage from "@/components/20260306_073441.png";
+
+// Import your actual images
+import retireYoungImage from "@/assets/cases/retire-young.jpg";
+import youthEquipImage from "@/assets/cases/youth-equip.jpg";
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
@@ -26,6 +29,7 @@ const caseStudies = [
       "How Strategic Event Branding Helped a ₦150,000 High-Ticket Bootcamp Surpass Attendance Targets",
     location: "Lagos, Nigeria · Physical Workshop",
     results: ["30+ Registrations", "₦150,000 Ticket Price", "25+ Design Assets"],
+    image: retireYoungImage, // ✅ use actual image
   },
   {
     slug: "youth-equip-bootcamp",
@@ -35,6 +39,7 @@ const caseStudies = [
       "Filling a 300-Seat Bootcamp to Overflow Capacity in Just 5 Weeks",
     location: "Nsukka, Nigeria · Physical Bootcamp",
     results: ["800+ Registrations", "~500 Attendees", "5 Week Campaign"],
+    image: youthEquipImage, // ✅ use actual image
   },
 ];
 
@@ -82,17 +87,13 @@ const CaseStudy = () => (
                   boxShadow: "0 4px 24px rgba(1,5,202,0.06)",
                 }}
               >
-                {/* Image placeholder */}
-                <div className="relative w-full h-[220px] bg-[hsl(252,100%,6%)] flex items-center justify-center overflow-hidden">
+                {/* Actual event photo */}
+                <div className="relative w-full h-[220px] overflow-hidden">
                   <img
-                    src={logoImage}
-                    alt="EventFlow"
-                    className="h-10 w-auto object-contain opacity-10 absolute"
+                    src={cs.image}
+                    alt={cs.event}
+                    className="w-full h-full object-cover"
                   />
-                  <span className="text-white/30 text-xs font-medium relative z-10">
-                    Photo coming soon
-                  </span>
-                  {/* TODO: Replace placeholder with actual event photo */}
                 </div>
 
                 <div className="p-6 md:p-8">
