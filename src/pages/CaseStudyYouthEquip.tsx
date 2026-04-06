@@ -273,6 +273,8 @@ const CaseStudyYouthEquip = () => (
     </section>
     
      {/* Execution Team */}
+    <section className="bg-white py-16 md:py-24">
+      <div className="container mx-auto max-w-[760px] space-y-16">
         <AnimatedSection>
           <SectionLabel>Execution Team</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8 mx-auto max-w sm:mx-6 md:mx-8 lg:mx-auto ">
@@ -294,6 +296,8 @@ const CaseStudyYouthEquip = () => (
            This integrated team ensured that every aspect of the event experience was structured and professionally managed.
         </p>
         </AnimatedSection>
+      </div>
+    </section>
     
     {/* Results */}
     <section className="bg-[hsl(252,100%,6%)] py-16 md:py-24">
