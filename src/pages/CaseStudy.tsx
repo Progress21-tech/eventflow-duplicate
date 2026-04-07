@@ -5,8 +5,8 @@ import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 
 // Import your actual images
-import retireYoungImage from "@/assets/cases/retire-young.jpg";
-import youthEquipImage from "@/assets/cases/youth-equip.jpg";
+import retireYoungImage from "@/assets/retire-young.jpg";
+import youthEquipImage from "@/assets/youth-equip.jpg";
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
