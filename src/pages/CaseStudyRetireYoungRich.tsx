@@ -5,6 +5,7 @@ import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 
 import eventPhoto from "@/assets/event1.jpg";
+import eventTestimonial from "@/assets/event3.png";
 
 
 const STRATEGY_EMAIL =
@@ -182,8 +183,9 @@ const CaseStudyRetireYoungRich = () => (
     className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
   />
 </AnimatedSection>
-
         </AnimatedSection>
+      
+
 
         {/* Overview */}
         <AnimatedSection>
@@ -331,6 +333,20 @@ const CaseStudyRetireYoungRich = () => (
         </p>
         </AnimatedSection>
 
+        <section className="bg-white py-16 md:py-24">
+      <div className="container mx-auto max-w-[760px] space-y-16">
+        {/* Image Placeholder */}
+        <AnimatedSection>
+         <AnimatedSection>
+  <img
+    src={eventTestimonial}
+    alt="Retire Young & Rich Event"
+    className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
+  />
+</AnimatedSection>
+        </AnimatedSection>
+      </div>
+        </section>
         {/*Client Feedback*/}
          <AnimatedSection>
           <SectionLabel>Client Feedback</SectionLabel>
