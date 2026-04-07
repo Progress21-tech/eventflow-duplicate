@@ -7,7 +7,6 @@ import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
 import FAQSection from "@/components/FAQSection";
-import V2ComingSoon from "@/components/V2ComingSoon";
 
 // Import case study images
 import retireYoungImage from "@/assets/retire-young.jpg";
@@ -95,7 +94,7 @@ const caseStudies = [
   {
     title: "Retire Young & Rich",
     image: retireYoungImage,
-    link: "/case-study/retire-young",
+    link: "/case-study/retire-young-rich",
   },
   {
     title: "Youth Equip Bootcamp",
@@ -250,12 +249,16 @@ const Index = () => {
                 {study.title}
               </h2>
               {/* CTA bottom-left */}
-              <Link
-                to={study.link}
-                className="absolute bottom-4 left-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-              >
-                View Case Study
-              </Link>
+            <Link
+  to={study.link}
+  className="absolute bottom-4 left-4 
+             px-4 py-2 rounded text-white font-semibold shadow-lg
+             bg-gradient-to-r from-[#09001d] via-[#0105ca] to-[#9ee106]
+             hover:opacity-90 transition"
+>
+  View Case Study
+</Link>
+
             </motion.div>
           ))}
         </div>
