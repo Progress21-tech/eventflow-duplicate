@@ -4,6 +4,9 @@ import { ChevronRight, Camera, ExternalLink } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 
+import eventPhoto from "@/assets/event1.jpg";
+
+
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
 
@@ -172,16 +175,14 @@ const CaseStudyRetireYoungRich = () => (
       <div className="container mx-auto max-w-[760px] space-y-16">
         {/* Image Placeholder */}
         <AnimatedSection>
-          {/* TODO: Replace with actual event photo — upload to src/assets/cases/retire-young-rich/ */}
-          <div
-            className="w-full h-[220px] md:h-[400px] rounded-2xl flex flex-col items-center justify-center gap-3"
-            style={{ background: "linear-gradient(135deg, #09001d, #0105ca)" }}
-          >
-            <Camera size={32} className="text-white/30" />
-            <span className="text-white/30 text-sm">
-              Event photos coming soon
-            </span>
-          </div>
+         <AnimatedSection>
+  <img
+    src={eventPhoto}
+    alt="Retire Young & Rich Event"
+    className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
+  />
+</AnimatedSection>
+
         </AnimatedSection>
 
         {/* Overview */}
