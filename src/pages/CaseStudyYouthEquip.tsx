@@ -128,27 +128,28 @@ const CaseStudyYouthEquip = () => (
       </div>
     </section>
 
-    {/* Metrics Bar */}
-    <section className="bg-[hsl(252,100%,6%)] py-12 md:py-16">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
-          {metrics.map((m, i) => (
-            <motion.div
-              key={m.label}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.1 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-            >
-              <p className="font-display text-3xl md:text-4xl text-[hsl(79,95%,45%)] mb-1">
-                {m.value}
-              </p>
-              <p className="text-sm text-white/60">{m.label}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
+   {/* Metrics Bar */}
+<section className="bg-[hsl(252,100%,6%)] py-6 md:py-8">
+  <div className="container mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto text-center">
+      {metrics.map((m, i) => (
+        <motion.div
+          key={m.label}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.5, delay: i * 0.1 }}
+        >
+          <p className="font-display text-2xl md:text-3xl text-[hsl(79,95%,45%)] mb-1">
+            {m.value}
+          </p>
+          <p className="text-xs md:text-sm text-white/60">{m.label}</p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
     {/* Main Content */}
     <section className="bg-white py-16 md:py-24">
@@ -161,23 +162,18 @@ const CaseStudyYouthEquip = () => (
   />
 </AnimatedSection>
 
-        {/* Video Placeholder */}
-        <AnimatedSection>
-          {/* TODO: Replace with actual video — upload to src/assets/cases/youth-equip/ */}
-          <div
-            className="w-full h-[220px] md:h-[320px] rounded-2xl flex flex-col items-center justify-center gap-3"
-            style={{
-              background: "linear-gradient(135deg, #09001d 60%, #0105ca)",
-            }}
-          >
-            <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
-              <Play size={28} className="text-white/40 ml-1" />
-            </div>
-            <span className="text-white/30 text-sm">
-              Event trailer coming soon
-            </span>
-          </div>
-        </AnimatedSection>
+       <AnimatedSection>
+  <div className="w-full h-[400px] rounded-2xl overflow-hidden">
+    <iframe
+      src="https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/preview"
+      width="100%"
+      height="100%"
+      allow="autoplay"
+      className="rounded-2xl"
+    ></iframe>
+  </div>
+</AnimatedSection>
+
 
         {/* Overview */}
         <AnimatedSection>
