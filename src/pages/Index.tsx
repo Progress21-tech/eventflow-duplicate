@@ -9,6 +9,10 @@ import CTAButton from "@/components/CTAButton";
 import FAQSection from "@/components/FAQSection";
 import V2ComingSoon from "@/components/V2ComingSoon";
 
+// Import case study images
+import retireYoungImage from "@/assets/retire-young.jpg";
+import youthEquipImage from "@/assets/youth-equip.jpg";
+
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request";
 
@@ -86,6 +90,19 @@ const rotatingWords = [
   "Workshops",
 ];
 
+// Case Studies data
+const caseStudies = [
+  {
+    title: "Retire Young & Rich",
+    image: retireYoungImage,
+    link: "/case-study/retire-young",
+  },
+  {
+    title: "Youth Equip Bootcamp",
+    image: youthEquipImage,
+    link: "/case-study/youth-equip-bootcamp",
+  },
+];
 const Index = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [formData, setFormData] = useState({
@@ -212,6 +229,37 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Case Studies Showcase */}
+       <section className="py-16 bg-gray-50">
+        <div className="flex gap-6 overflow-x-scroll no-scrollbar px-4">
+          {caseStudies.map((study, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.2 }}
+              className="relative min-w-[300px] md:min-w-[500px] h-[400px] flex-shrink-0 rounded-lg overflow-hidden shadow-lg"
+            >
+              <img
+                src={study.image}
+                alt={study.title}
+                className="w-full h-full object-cover"
+              />
+              {/* Headline top-left */}
+              <h2 className="absolute top-4 left-4 text-white text-xl font-bold drop-shadow-lg">
+                {study.title}
+              </h2>
+              {/* CTA bottom-left */}
+              <Link
+                to={study.link}
+                className="absolute bottom-4 left-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                View Case Study
+              </Link>
+            </motion.div>
+          ))}
+        </div>
+      </section>
       {/* Social Proof Marquee */}
       <section className="bg-ef-grey py-10 overflow-hidden">
         <AnimatedSection>
