@@ -249,15 +249,18 @@ const Index = () => {
                 {study.title}
               </h2>
               {/* CTA bottom-left */}
-            <Link
+<Link
   to={study.link}
   className="absolute bottom-4 left-4 
              px-4 py-2 rounded text-white font-semibold shadow-lg
-             bg-gradient-to-r from-[#09001d] via-[#0105ca] to-[#9ee106]
              hover:opacity-90 transition"
+  style={{
+    background: "linear-gradient(135deg, rgba(9,0,29,0.85) 0%, rgba(1,5,202,0.6) 100%)",
+  }}
 >
   View Case Study
 </Link>
+
 
             </motion.div>
           ))}
