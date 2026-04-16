@@ -333,7 +333,7 @@ const CaseStudyDesignAThon = () => (
             The Results
           </h2>
           <p className="text-white/50 text-center mb-12 max-w-xl mx-auto">
-            Achieved organically, twice consecutively — proving this is a
+            Achieved organically, twice consecutively; proving this is a
             repeatable system, not luck.
           </p>
 
@@ -463,7 +463,7 @@ const CaseStudyDesignAThon = () => (
             </p>
             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-4">
               If you run a community, want to host a virtual event, want to
-              generate leads, or want to build authority — this proves you don't
+              generate leads, or want to build authority; this proves you don't
               need months, and you don't need ads.
             </p>
             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed font-semibold">
@@ -493,7 +493,7 @@ const CaseStudyDesignAThon = () => (
           <p className="text-white/60 mb-8 leading-relaxed">
             EventFlow helps creators, communities, and organizations attract
             large audiences, structure their events, and convert attention into
-            results — organically.
+            results; organically.
           </p>
           <a
             href={STRATEGY_EMAIL}
