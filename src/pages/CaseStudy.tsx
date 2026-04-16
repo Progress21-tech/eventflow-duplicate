@@ -7,7 +7,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 // Import your actual images
 import retireYoungImage from "@/assets/retire-young.jpg";
 import youthEquipImage from "@/assets/youth-equip.jpg";
-import designAThonImage from "@/assets/design-a-thon.jpg"; // ✅ add your actual image here
+import designAThonImage from "@/assets/design-a-thon-overview-1.jpg"; // ✅ add your actual image here
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
