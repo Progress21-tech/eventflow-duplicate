@@ -289,7 +289,7 @@ const CaseStudyDesignAThon = () => (
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
             EventFlow implemented a high-intensity organic event growth system
             focused on four pillars. The entire campaign was designed to move
-            fast, spread wide, and convert hard — all without spending a single
+            fast, spread wide, and convert hard; all without spending a single
             naira on ads.
           </p>
           <div className="space-y-6">
