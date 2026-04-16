@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ChevronRight, Camera, Play, ExternalLink } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 
@@ -28,16 +28,18 @@ const metrics = [
 ];
 
 const challenges = [
-  "Needed to fill a 300-seat venue for a free community bootcamp targeting youth in a university town with limited digital marketing infrastructure.",
-  "Had only 5 weeks to build awareness, generate registrations, and create enough momentum for strong physical turnout.",
-  "Required a cohesive brand identity and marketing system that could cut through noise on social media and WhatsApp; the primary channels for the target audience.",
+  "No existing audience base.",
+  "Zero public awareness of the event.",
+  "Tight marketing budget.",
+  "Limited time to promote.",
+  "The need to attract hundreds of young participants in a new location.",
 ];
 
 const approaches = [
   {
     num: "01",
     title: "Strategic Audience Mobilization",
-    desc: "Strategic Audience Mobilization. These ambassadors helped spread awareness organically within universities and student networks.",
+    desc: "Campus ambassadors were recruited to help promote the event across student communities. These ambassadors helped spread awareness organically within universities and student networks.",
   },
   {
     num: "02",
@@ -51,11 +53,45 @@ const approaches = [
   },
 ];
 
+const executionRoles = [
+  "Design and visual creatives",
+  "Video production",
+  "Content creation",
+  "Social media management",
+  "Marketing coordination",
+  "Project management",
+  "Community management",
+  "Registration management",
+  "Logistics and operations",
+];
+
+const eventExperienceProgram = [
+  "Keynote presentations",
+  "Skill-focused sessions",
+  "Q&A discussions",
+  "Networking opportunities",
+];
+
+const eventExperienceSpeakers = [
+  "Marketing",
+  "Leadership",
+  "Design",
+  "Video production",
+  "Artificial intelligence",
+];
+
+const postEventImpact = [
+  "Participants shared numerous testimonials about the value gained.",
+  "New partnerships emerged.",
+  "A community of engaged participants continued interacting after the bootcamp.",
+];
+
 const metricsTable = [
+  { metric: "Campaign Duration", outcome: "5 Weeks" },
+  { metric: "Marketing Push", outcome: "2 Weeks" },
   { metric: "Total Registrations", outcome: "800+" },
   { metric: "Estimated Attendance", outcome: "~500" },
   { metric: "Venue Capacity", outcome: "300 (overflow)" },
-  { metric: "Campaign Duration", outcome: "5 Weeks" },
   { metric: "Primary Channels", outcome: "Instagram, WhatsApp, On-campus" },
   { metric: "Ticket Price", outcome: "Free" },
   { metric: "Design Assets Produced", outcome: "30+" },
@@ -64,6 +100,7 @@ const metricsTable = [
 const eventDetails = [
   { label: "Event", value: "Youth Equip Bootcamp" },
   { label: "Location", value: "Nsukka, Enugu State." },
+  { label: "Venue Capacity", value: "300 seats" },
   { label: "Format", value: "Physical Bootcamp" },
   { label: "Ticket Price", value: "Free" },
   { label: "Campaign Duration", value: "5 Weeks" },
@@ -128,74 +165,84 @@ const CaseStudyYouthEquip = () => (
       </div>
     </section>
 
-   {/* Metrics Bar */}
-<section className="bg-[hsl(252,100%,6%)] py-6 md:py-8">
-  <div className="container mx-auto">
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto text-center">
-      {metrics.map((m, i) => (
-        <motion.div
-          key={m.label}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.5, delay: i * 0.1 }}
-        >
-          <p className="font-display text-2xl md:text-3xl text-[hsl(79,95%,45%)] mb-1">
-            {m.value}
-          </p>
-          <p className="text-xs md:text-sm text-white/60">{m.label}</p>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
-
+    {/* Metrics Bar */}
+    <section className="bg-[hsl(252,100%,6%)] py-6 md:py-8">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto text-center">
+          {metrics.map((m, i) => (
+            <motion.div
+              key={m.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+            >
+              <p className="font-display text-2xl md:text-3xl text-[hsl(79,95%,45%)] mb-1">
+                {m.value}
+              </p>
+              <p className="text-xs md:text-sm text-white/60">{m.label}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
 
     {/* Main Content */}
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] space-y-16">
-      <AnimatedSection>
-  <img
-    src={eventPhoto}
-    alt="Retire Young & Rich Event"
-    className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
-  />
-</AnimatedSection>
+        <AnimatedSection>
+          <img
+            src={eventPhoto}
+            alt="Youth Equip Bootcamp Event"
+            className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
+          />
+        </AnimatedSection>
 
-       <AnimatedSection>
-  <div className="w-full h-[400px] rounded-2xl overflow-hidden">
-    <iframe
-      src="https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/preview"
-      width="100%"
-      height="100%"
-      allow="autoplay"
-      className="rounded-2xl"
-    ></iframe>
-  </div>
-</AnimatedSection>
-
+        <AnimatedSection>
+          <div className="w-full h-[400px] rounded-2xl overflow-hidden">
+            <iframe
+              src="https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/preview"
+              width="100%"
+              height="100%"
+              allow="autoplay"
+              className="rounded-2xl"
+            ></iframe>
+          </div>
+        </AnimatedSection>
 
         {/* Overview */}
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-           <strong>The Youth Equip Bootcamp</strong> was designed as a transformational learning experience for young people seeking clarity, practical skills, and mentorship for building meaningful careers and businesses.
-          </p>
-           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-           However, when the event planning began, it faced a major challenge: <strong>it was a first-time event with zero awareness and limited budget.</strong>
-          </p>
-           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-           EventFlow stepped in to structure the marketing, build the audience pipeline, and coordinate the execution from promotion to event-day experience.
+            <strong>The Youth Equip Bootcamp</strong> was designed as a
+            transformational learning experience for young people seeking
+            clarity, practical skills, and mentorship for building meaningful
+            careers and businesses.
           </p>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-          The result: <strong>a completely filled venue with overflow attendance.</strong>
+            However, when the event planning began, it faced a major challenge:{" "}
+            <strong>
+              it was a first-time event with zero awareness and limited budget.
+            </strong>
+          </p>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+            EventFlow stepped in to structure the marketing, build the audience
+            pipeline, and coordinate the execution from promotion to event-day
+            experience.
+          </p>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+            The result:{" "}
+            <strong>a completely filled venue with overflow attendance.</strong>
           </p>
         </AnimatedSection>
 
         {/* The Challenge */}
         <AnimatedSection>
           <SectionLabel>The Challenge</SectionLabel>
-          <div className="space-y-4">
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-6">
+            Before the campaign started, the event faced several obstacles:
+          </p>
+          <div className="space-y-4 mb-6">
             {challenges.map((c, i) => (
               <motion.div
                 key={i}
@@ -211,6 +258,11 @@ const CaseStudyYouthEquip = () => (
               </motion.div>
             ))}
           </div>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+            The event also required strong coordination between multiple teams
+            to ensure that registration, communication, logistics, and marketing
+            worked together seamlessly.
+          </p>
         </AnimatedSection>
 
         {/* Event Details */}
@@ -233,6 +285,11 @@ const CaseStudyYouthEquip = () => (
         {/* Approach */}
         <AnimatedSection>
           <SectionLabel>Eventflow Approach</SectionLabel>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
+            To address the awareness gap and maximize attendance within the
+            limited timeframe, EventFlow implemented a multi-channel event
+            growth strategy. The strategy focused on three pillars:
+          </p>
           <div className="space-y-6">
             {approaches.map((a, i) => (
               <motion.div
@@ -265,34 +322,42 @@ const CaseStudyYouthEquip = () => (
         </AnimatedSection>
       </div>
     </section>
-    
-     {/* Execution Team */}
+
+    {/* Execution Team */}
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] space-y-16">
         <AnimatedSection>
           <SectionLabel>Execution Team</SectionLabel>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-           EventFlow coordinated a multidisciplinary execution team consisting of about 15 core members, excluding additional volunteers.
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-6">
+            EventFlow coordinated a multidisciplinary execution team consisting
+            of about 15 core members, excluding additional volunteers.
           </p>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-           Key roles included:
-           Design and visual creatives
-           Video production
-           Content creation
-           Social media management
-           Marketing coordination
-           Project management
-           Community management
-           Registration management
-           Logistics and operations
-        </p>
-        <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
-           This integrated team ensured that every aspect of the event experience was structured and professionally managed.
-        </p>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-6">
+            Key roles included:
+          </p>
+          <div className="space-y-3 mb-8">
+            {executionRoles.map((role, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.07 }}
+                className="flex items-center gap-3"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(237,99%,40%)] flex-shrink-0" />
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm">{role}</p>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+            This integrated team ensured that every aspect of the event
+            experience was structured and professionally managed.
+          </p>
         </AnimatedSection>
       </div>
     </section>
-    
+
     {/* Results */}
     <section className="bg-[hsl(252,100%,6%)] py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] text-center">
@@ -320,20 +385,113 @@ const CaseStudyYouthEquip = () => (
               </motion.div>
             ))}
           </div>
-          <p className="text-white/60 leading-relaxed max-w-xl mx-auto">
+          <p className="text-white/60 leading-relaxed max-w-xl mx-auto mb-6">
             The bootcamp exceeded all expectations; generating over 800
             registrations and approximately 500 physical attendees for a venue
             with a 300-seat capacity. The event reached overflow status,
             validating the effectiveness of the marketing strategy and brand
             execution.
           </p>
+          {/* Additional result details from document */}
+          <div className="text-left max-w-xl mx-auto space-y-3 mt-8">
+            {[
+              "300-seat hall completely filled.",
+              "100 additional seats rented.",
+              "Additional attendees standing due to demand.",
+            ].map((detail, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="flex items-center gap-3"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(79,95%,45%)] flex-shrink-0" />
+                <p className="text-white/70 text-sm">{detail}</p>
+              </motion.div>
+            ))}
+          </div>
         </AnimatedSection>
       </div>
     </section>
 
-    {/* Metrics Table + Impact + Links */}
+    {/* Event Experience */}
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] space-y-16">
+        <AnimatedSection>
+          <SectionLabel>Event Experience</SectionLabel>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-6">
+            Participants experienced a highly engaging program that included:
+          </p>
+          <div className="space-y-3 mb-8">
+            {eventExperienceProgram.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.07 }}
+                className="flex items-center gap-3"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(237,99%,40%)] flex-shrink-0" />
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm">{item}</p>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-6">
+            Speakers represented multiple professional fields, including:
+          </p>
+          <div className="space-y-3 mb-8">
+            {eventExperienceSpeakers.map((field, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.07 }}
+                className="flex items-center gap-3"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(237,99%,40%)] flex-shrink-0" />
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm">{field}</p>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+            The seamless registration process and structured program flow
+            ensured a smooth experience for attendees.
+          </p>
+        </AnimatedSection>
+
+        {/* Post-Event Impact */}
+        <AnimatedSection>
+          <SectionLabel>Post-Event Impact</SectionLabel>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-6">
+            Following the event:
+          </p>
+          <div className="space-y-4 mb-6">
+            {postEventImpact.map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                className="border-l-[3px] border-[hsl(237,99%,40%)] pl-5 py-3 bg-[hsl(237,99%,40%)]/5 rounded-r-xl"
+              >
+                <p className="text-[hsl(252,100%,6%)]/80 text-sm leading-relaxed">
+                  {item}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+            The event successfully delivered on its goal of equipping young
+            people with practical knowledge, direction, and professional
+            connections.
+          </p>
+        </AnimatedSection>
+
         {/* Key Metrics Table */}
         <AnimatedSection>
           <SectionLabel>Key Metrics</SectionLabel>
@@ -387,11 +545,12 @@ const CaseStudyYouthEquip = () => (
           >
             <SectionLabel>Key Takeaway</SectionLabel>
             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-              Great events don't fill themselves. Even with a free ticket and a
-              compelling topic, reaching and converting your target audience
-              requires a structured marketing approach, strong visual branding,
-              and consistent execution. The right system can turn a 300-seat
-              goal into a 500-person overflow event.
+              Even with zero initial awareness and a tight budget, a
+              well-structured event marketing strategy can rapidly mobilize an
+              audience and deliver a high-impact experience. Through strategic
+              promotion, digital funnels, and coordinated execution, EventFlow
+              helped transform the Youth Equip Bootcamp from an uncertain launch
+              into a fully attended and highly engaging event.
             </p>
           </div>
         </AnimatedSection>
