@@ -7,6 +7,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 // Import your actual images
 import retireYoungImage from "@/assets/retire-young.jpg";
 import youthEquipImage from "@/assets/youth-equip.jpg";
+import designAThonImage from "@/assets/design-a-thon.jpg"; // ✅ add your actual image here
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
@@ -29,7 +30,7 @@ const caseStudies = [
       "How Strategic Event Branding Helped a ₦150,000 High-Ticket Bootcamp Surpass Attendance Targets",
     location: "Lagos, Nigeria · Physical Workshop",
     results: ["30+ Registrations", "₦150,000 Ticket Price", "25+ Design Assets"],
-    image: retireYoungImage, // ✅ use actual image
+    image: retireYoungImage,
   },
   {
     slug: "youth-equip-bootcamp",
@@ -39,7 +40,17 @@ const caseStudies = [
       "Filling a 300-Seat Bootcamp to Overflow Capacity in Just 5 Weeks",
     location: "Nsukka, Nigeria · Physical Bootcamp",
     results: ["800+ Registrations", "~500 Attendees", "5 Week Campaign"],
-    image: youthEquipImage, // ✅ use actual image
+    image: youthEquipImage,
+  },
+  {
+    slug: "design-a-thon",
+    category: "Virtual Event Growth",
+    event: "Design-A-Thon 1.0 & 2.0",
+    headline:
+      "How We Generated 1,000+ Registrations in Under 12 Days — Twice. Without Ads.",
+    location: "Virtual · 12-Hour Livestream",
+    results: ["1,000+ Registrations", "₦0 Ad Spend", "2 Consecutive Editions"],
+    image: designAThonImage,
   },
 ];
 
@@ -76,6 +87,8 @@ const CaseStudy = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
+              // Make the third card span full width on md+
+              className={caseStudies.length % 2 !== 0 && i === caseStudies.length - 1 ? "md:col-span-2 md:max-w-[calc(50%-16px)] md:mx-auto w-full" : ""}
             >
               <Link
                 to={`/case-study/${cs.slug}`}
@@ -87,7 +100,7 @@ const CaseStudy = () => (
                   boxShadow: "0 4px 24px rgba(1,5,202,0.06)",
                 }}
               >
-                {/* Actual event photo */}
+                {/* Event photo */}
                 <div className="relative w-full h-[220px] overflow-hidden">
                   <img
                     src={cs.image}
