@@ -168,6 +168,38 @@ const CaseStudyDesignAThon = () => (
       </div>
     </section>
 
+    {/* Hero Images — Stacked */}
+<section className="bg-[hsl(252,100%,6%)] pb-12 md:pb-16">
+  <div className="container mx-auto max-w-4xl space-y-4">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="rounded-2xl overflow-hidden"
+    >
+      <img
+        src="/images/design-a-thon-1.jpg"
+        alt="Design-A-Thon 1.0"
+        className="w-full h-72 object-cover"
+      />
+    </motion.div>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.15 }}
+      className="rounded-2xl overflow-hidden"
+    >
+      <img
+        src="/images/design-a-thon-2.jpg"
+        alt="Design-A-Thon 2.0"
+        className="w-full h-72 object-cover"
+      />
+    </motion.div>
+  </div>
+</section>
+    
     {/* Main Content */}
     <section className="bg-white py-16 md:py-24">
       <div className="container mx-auto max-w-[760px] space-y-16">
@@ -186,6 +218,34 @@ const CaseStudyDesignAThon = () => (
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
             And it worked — not once, but twice.
           </p>
+          <div className="mt-8 space-y-4">
+  <motion.div
+    initial={{ opacity: 0, scale: 0.97 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+    className="rounded-2xl overflow-hidden"
+  >
+    <img
+      src="/images/design-a-thon-overview-1.jpg"
+      alt="Design-A-Thon Overview"
+      className="w-full h-64 object-cover"
+    />
+  </motion.div>
+  <motion.div
+    initial={{ opacity: 0, scale: 0.97 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: 0.15 }}
+    className="rounded-2xl overflow-hidden"
+  >
+    <img
+      src="/images/design-a-thon-overview-2.jpg"
+      alt="Design-A-Thon Overview"
+      className="w-full h-64 object-cover"
+    />
+  </motion.div>
+</div>
         </AnimatedSection>
 
         {/* The Challenge */}
