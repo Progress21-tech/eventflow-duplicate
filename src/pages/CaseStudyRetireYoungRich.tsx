@@ -5,7 +5,7 @@ import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 
 import eventPhoto from "@/assets/event1.jpg";
-import eventTestimonial from "@/assets/event3.PNG";
+import eventTestimonial from "@/assets/event3.png";
 
 
 const STRATEGY_EMAIL =
