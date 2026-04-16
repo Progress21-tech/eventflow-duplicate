@@ -24,18 +24,15 @@ const metrics = [
 ];
 
 const challenges = [
-  "Most virtual events struggle with low turnout and weak engagement.",
-  "Heavy reliance on paid ads to drive registrations.",
-  "Short timeline of under 12 days to hit ambitious registration targets.",
-  "Need for sustained audience engagement across a full 12-hour session.",
-  "Poor conversion from attendees to product buyers after the event.",
+  "Most virtual events struggle with: low turnout, weak engagement, poor conversion and heavy reliance on ads.",
+  "But for DesignAThon: No Ad was spent, Short Timeline(Under 12 Days), High Expectation for Turnout, Need for Engagement for 12 hours.",
 ];
 
 const approaches = [
   {
     num: "01",
     title: "Momentum Creation",
-    desc: "Creating urgency and buzz within a short timeframe. Every day of the campaign was intentional — teasers, countdowns, and high-energy content worked together to build anticipation and make registration feel like an event in itself.",
+    desc: "Creating urgency and buzz within a short timeframe. Every day of the campaign was intentional teasers, countdowns, and high-energy content worked together to build anticipation and make registration feel like an event in itself.",
   },
   {
     num: "02",
@@ -45,7 +42,7 @@ const approaches = [
   {
     num: "03",
     title: "Community Distribution",
-    desc: "Leveraging WhatsApp, Telegram, and social platforms to spread rapidly. Distribution was built into the audience — the content was designed to be shared, and the community became the channel.",
+    desc: "Leveraging WhatsApp, Telegram, and social platforms to spread rapidly. Distribution was built into the audience; the content was designed to be shared, and the community became the channel.",
   },
   {
     num: "04",
@@ -71,7 +68,7 @@ const whatMadeItWork = [
   {
     num: "02",
     title: "Community Leverage",
-    desc: "Distribution was built into the audience itself. People didn't just attend — they invited others, turning every registrant into a micro-distributor.",
+    desc: "Distribution was built into the audience itself. People didn't just attend; they invited others, turning every registrant into a micro-distributor.",
   },
   {
     num: "03",
@@ -132,7 +129,7 @@ const CaseStudyDesignAThon = () => (
             variants={fadeUp}
             className="font-display text-3xl md:text-4xl lg:text-5xl text-white mb-4 leading-[1.1]"
           >
-            How We Generated 1,000+ Registrations in Under 12 Days — Twice.
+            How We Generated 1,000+ Registrations in Under 12 Days; Twice.
             Without Ads.
           </motion.h1>
 
@@ -140,7 +137,7 @@ const CaseStudyDesignAThon = () => (
             variants={fadeUp}
             className="text-base md:text-lg text-white/50"
           >
-            Design-A-Thon 1.0 & 2.0 — A Repeatable Organic Event Growth System
+            Design-A-Thon 1.0 & 2.0
           </motion.p>
         </motion.div>
       </div>
@@ -179,7 +176,7 @@ const CaseStudyDesignAThon = () => (
       className="rounded-2xl overflow-hidden"
     >
       <img
-        src="/assets/design-a-thon-1.jpg"
+        src="/assets/design-a-thon-overview-1.jpg"
         alt="Design-A-Thon 1.0"
         className="w-full h-72 object-cover"
       />
@@ -192,7 +189,7 @@ const CaseStudyDesignAThon = () => (
       className="rounded-2xl overflow-hidden"
     >
       <img
-        src="/assets/design-a-thon-2.jpg"
+        src="/assets/design-a-thon-overview-2.jpg"
         alt="Design-A-Thon 2.0"
         className="w-full h-72 object-cover"
       />
@@ -216,7 +213,7 @@ const CaseStudyDesignAThon = () => (
             deliver real value, and convert attention into revenue.
           </p>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            And it worked — not once, but twice.
+            And it worked; not once, but twice.
           </p>
           <div className="mt-8 space-y-4">
   <motion.div
