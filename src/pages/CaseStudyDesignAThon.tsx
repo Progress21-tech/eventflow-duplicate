@@ -224,7 +224,7 @@ const CaseStudyDesignAThon = () => (
     className="rounded-2xl overflow-hidden"
   >
     <img
-      src="/images/design-a-thon-overview-1.jpg"
+      src="/assets/design-a-thon-overview-1.jpg"
       alt="Design-A-Thon Overview"
       className="w-full h-64 object-cover"
     />
@@ -237,7 +237,7 @@ const CaseStudyDesignAThon = () => (
     className="rounded-2xl overflow-hidden"
   >
     <img
-      src="/images/design-a-thon-overview-2.jpg"
+      src="/assets/design-a-thon-overview-2.jpg"
       alt="Design-A-Thon Overview"
       className="w-full h-64 object-cover"
     />
