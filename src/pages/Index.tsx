@@ -12,6 +12,13 @@ import FAQSection from "@/components/FAQSection";
 import retireYoungImage from "@/assets/retire-young.jpg";
 import youthEquipImage from "@/assets/youth-equip.jpg";
 
+//Import Social Proofs Logos of Companies that have been worked with
+import logo1 from "@/assets/logo1.png";
+import logo2 from "@/assets/logo2.png";
+import logo3 from "@/assets/logo3.png";
+
+const logos = [logo1, logo2, logo3];
+
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request";
 
@@ -266,25 +273,32 @@ const Index = () => {
           ))}
         </div>
       </section>
+
       {/* Social Proof Marquee */}
-      <section className="bg-ef-grey py-10 overflow-hidden">
-        <AnimatedSection>
-          <p className="text-center text-sm text-ef-navy/60 font-medium mb-8 px-4">
-            Powering growth for bootcamps, conferences, workshops, launches, and
-            corporate events.
-          </p>
-        </AnimatedSection>
-        <div className="relative overflow-hidden">
-          <div className="flex marquee-track w-max">
-            {[...Array(12)].map((_, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 mx-6 w-32 h-12 rounded-lg bg-ef-navy/5 border border-ef-navy/10 flex items-center justify-center"
-              ></div>
-            ))}
-          </div>
+<section className="bg-ef-grey py-10 overflow-hidden">
+  <AnimatedSection>
+    <p className="text-center text-sm text-ef-navy/60 font-medium mb-8 px-4">
+      Powering growth for bootcamps, conferences, workshops, launches, and
+      corporate events.
+    </p>
+  </AnimatedSection>
+  <div className="relative overflow-hidden">
+    <div className="flex marquee-track w-max">
+      {[...logos, ...logos].map((logo, i) => (
+        <div
+          key={i}
+          className="flex-shrink-0 mx-6 w-32 h-12 flex items-center justify-center"
+        >
+          <img
+            src={logo}
+            alt={`client logo ${i + 1}`}
+            className="max-h-10 max-w-[120px] object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Problem → Solution */}
       <section className="bg-ef-navy py-20 md:py-28">
