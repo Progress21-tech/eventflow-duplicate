@@ -8,7 +8,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import eventPhoto from "@/assets//event2.jpg";
 
 {/* Import Videos*/}
-import youthVideo from "@/assets/youthequipbootcamp-updated.mp4";
+import youthVideo from "@/assets/youthequipbootcampupdated.mp4";
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
