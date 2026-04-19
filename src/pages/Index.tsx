@@ -244,8 +244,13 @@ const Index = () => {
 
       {/* Case Studies Showcase */}
 <section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4 md:px-8 mb-6">
+    <p className="text-xs font-bold uppercase tracking-[0.15em] text-[hsl(237,99%,40%)]">
+      Case Studies
+    </p>
+  </div>
   <div
-    className="flex gap-6 overflow-x-scroll no-scrollbar px-4"
+    className="flex gap-6 overflow-x-scroll no-scrollbar pl-4 md:pl-8 lg:pl-[max(2rem,calc((100vw-1280px)/2+2rem))]"
     style={{ scrollSnapType: "x mandatory" }}
   >
     {caseStudies.map((study, idx) => (
