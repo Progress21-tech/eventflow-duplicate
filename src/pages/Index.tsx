@@ -456,7 +456,7 @@ const Index = () => {
             ))}
           </div>
           <AnimatedSection className="text-center mt-12" delay={0.4}>
-            <a href={STRATEGY_EMAIL}>
+            <a href={WHATSAPP}>
               <CTAButton variant="primary">
                 Start With a Strategy Call
               </CTAButton>
