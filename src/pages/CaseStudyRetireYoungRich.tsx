@@ -7,6 +7,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 import eventPhoto from "@/assets/event1.jpg";
 import eventTestimonial from "@/assets/event3.png";
 
+import retireYoung from "@/assets/retireyoungandrich.mp4";
+
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
@@ -184,6 +186,21 @@ const CaseStudyRetireYoungRich = () => (
   />
 </AnimatedSection>
         </AnimatedSection>
+
+        <AnimatedSection>
+         <div className="w-full h-[400px] rounded-2xl overflow-hidden">
+  <video
+    src={youthVideo}
+    autoPlay
+    muted
+    loop
+    controls
+    playsInline
+    className="w-full h-full object-contain rounded-2xl"
+  >
+  </video>
+          </div>
+        </AnimatedSection>
       
 
 
@@ -337,11 +354,11 @@ const CaseStudyRetireYoungRich = () => (
       <div className="container mx-auto max-w-[760px] space-y-16">
         {/* Image Placeholder */}
         <AnimatedSection>
-         <AnimatedSection>
+                <AnimatedSection>
   <img
     src={eventTestimonial}
     alt="Retire Young & Rich Event"
-    className="w-full h-[220px] md:h-[400px] rounded-2xl object-cover"
+    className="w-full rounded-2xl object-cover"
   />
 </AnimatedSection>
         </AnimatedSection>
