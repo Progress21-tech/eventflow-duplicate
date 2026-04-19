@@ -207,6 +207,7 @@ const CaseStudyYouthEquip = () => (
               width="100%"
               height="100%"
               allow="autoplay"
+              controls
               className="rounded-2xl"
             ></video>
           </div>
