@@ -96,7 +96,6 @@ const metricsTable = [
   { metric: "Venue Capacity", outcome: "300 (overflow)" },
   { metric: "Primary Channels", outcome: "Instagram, WhatsApp, On-campus" },
   { metric: "Ticket Price", outcome: "Free" },
-  { metric: "Design Assets Produced", outcome: "30+" },
 ];
 
 const eventDetails = [
@@ -105,7 +104,7 @@ const eventDetails = [
   { label: "Venue Capacity", value: "300 seats" },
   { label: "Format", value: "Physical Bootcamp" },
   { label: "Ticket Price", value: "Free" },
-  { label: "Campaign Duration", value: "5 Weeks" },
+  { label: "Campaign Timeline", value: "5 Weeks Total Planning, 2 Weeks Focused Marketing Campaign" },
 ];
 
 const SectionLabel = ({ children }: { children: string }) => (
@@ -527,19 +526,6 @@ const CaseStudyYouthEquip = () => (
               </tbody>
             </table>
           </div>
-        </AnimatedSection>
-
-        {/* Impact */}
-        <AnimatedSection>
-          <SectionLabel>Impact</SectionLabel>
-          <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
-            Youth Equip Bootcamp demonstrated that with the right branding and
-            marketing system, even free community events can generate massive
-            engagement and attendance. The campaign proved that
-            professional-quality design and structured content rollout are not
-            luxuries — they are essential tools for any event organizer looking
-            to maximize reach and turnout, regardless of budget.
-          </p>
         </AnimatedSection>
 
         {/* Key Takeaway */}
