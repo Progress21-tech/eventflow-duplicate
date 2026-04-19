@@ -11,6 +11,7 @@ import FAQSection from "@/components/FAQSection";
 // Import case study images
 import retireYoungImage from "@/assets/retire-young.jpg";
 import youthEquipImage from "@/assets/youth-equip.jpg";
+import designAThonImage from "@/assets/design-a-thon-overview-1.jpg";
 
 //Import Social Proofs Logos of Companies that have been worked with
 import logo1 from "@/assets/logo1-removed-bg.png";
@@ -100,7 +101,7 @@ const rotatingWords = [
 // Case Studies data
 const caseStudies = [
   {
-    title: "Retire Young & Rich",
+    title: "How to Retire Young and Rich Bootcamp",
     image: retireYoungImage,
     link: "/case-study/retire-young-rich",
   },
@@ -108,6 +109,11 @@ const caseStudies = [
     title: "Youth Equip Bootcamp",
     image: youthEquipImage,
     link: "/case-study/youth-equip-bootcamp",
+  },
+  {
+    title: "Design-A-Thon 1.0 & 2.0",
+    image: designAThonImage,
+    link: "/case-study/design-a-thon",
   },
 ];
 const Index = () => {
@@ -237,43 +243,54 @@ const Index = () => {
       </section>
 
       {/* Case Studies Showcase */}
-       <section className="py-16 bg-gray-50">
-        <div className="flex gap-6 overflow-x-scroll no-scrollbar px-4">
-          {caseStudies.map((study, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: idx * 0.2 }}
-              className="relative min-w-[300px] md:min-w-[500px] h-[400px] flex-shrink-0 rounded-lg overflow-hidden shadow-lg"
-            >
-              <img
-                src={study.image}
-                alt={study.title}
-                className="w-full h-full object-cover"
-              />
-              {/* Headline top-left */}
-              <h2 className="absolute top-4 left-4 text-white text-xl font-bold drop-shadow-lg">
-                {study.title}
-              </h2>
-              {/* CTA bottom-left */}
-<Link
-  to={study.link}
-  className="absolute bottom-4 left-4 
-             px-4 py-2 rounded text-white font-semibold shadow-lg
-             hover:opacity-90 transition"
-  style={{
-    background: "linear-gradient(135deg, rgba(9,0,29,0.85) 0%, rgba(1,5,202,0.6) 100%)",
-  }}
->
-  View Case Study
-</Link>
+<section className="py-16 bg-gray-50">
+  <div
+    className="flex gap-6 overflow-x-scroll no-scrollbar px-4"
+    style={{ scrollSnapType: "x mandatory" }}
+  >
+    {caseStudies.map((study, idx) => (
+      <motion.div
+        key={idx}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: idx * 0.2 }}
+        className="relative flex-shrink-0 rounded-2xl overflow-hidden shadow-lg"
+        style={{
+          width: "80vw",
+          maxWidth: "500px",
+          height: "420px",
+          scrollSnapAlign: "start",
+        }}
+      >
+        <img
+          src={study.image}
+          alt={study.title}
+          className="w-full h-full object-cover"
+        />
+        {/* Dark gradient overlay so text is readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
+        {/* Title top-left */}
+        <h2 className="absolute top-4 left-4 text-white text-xl font-bold drop-shadow-lg pr-4">
+          {study.title}
+        </h2>
 
-            </motion.div>
-          ))}
-        </div>
-      </section>
+        {/* CTA bottom-left */}
+        <Link
+          to={study.link}
+          className="absolute bottom-4 left-4 px-5 py-2 rounded-full font-semibold transition-all duration-300 hover:bg-white hover:text-[hsl(237,99%,40%)]"
+          style={{
+            border: "2px solid white",
+            color: "white",
+            background: "transparent",
+          }}
+        >
+          View Case Study
+        </Link>
+      </motion.div>
+    ))}
+  </div>
+</section>
 
       {/* Social Proof Marquee */}
 <section className="bg-ef-grey py-10 overflow-hidden">
