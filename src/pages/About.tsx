@@ -6,6 +6,8 @@ import CTAButton from "@/components/CTAButton";
 
 const STRATEGY_EMAIL = "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request";
 
+const WHATSAPP = "https://api.whatsapp.com/send?phone=2348154356486&text=Hi%20EventFlow%2C%0A%0AI%27m%20interested%20in%20your%20event%20marketing%20services.%0A%0AHow%20do%20we%20get%20started%3F";
+
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.12 } } };
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
 
@@ -153,7 +155,7 @@ const About = () => {
               If you're ready to run events with more clarity, structure, and growth; we'd love to work with you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={STRATEGY_EMAIL}><CTAButton variant="primary">Book a Strategy Call</CTAButton></a>
+              <a href={WHATSAPP}><CTAButton variant="primary">Book a Strategy Call</CTAButton></a>
               <Link to="/services"><CTAButton variant="ghost">Explore Our Services</CTAButton></Link>
             </div>
           </AnimatedSection>
