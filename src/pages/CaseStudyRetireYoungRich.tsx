@@ -190,7 +190,7 @@ const CaseStudyRetireYoungRich = () => (
         <AnimatedSection>
          <div className="w-full h-[400px] rounded-2xl overflow-hidden">
   <video
-    src={youthVideo}
+    src={retireYoung}
     autoPlay
     muted
     loop
