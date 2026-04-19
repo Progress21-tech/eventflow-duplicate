@@ -8,7 +8,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import eventPhoto from "@/assets//event2.jpg";
 
 {/* Import Videos*/}
-import youthVideo from "@/assets/youthequipbootcamp.mp4";
+import youthVideo from "@/assets/youthequipbootcamp-updated.mp4";
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
@@ -389,7 +389,7 @@ const CaseStudyYouthEquip = () => (
               </motion.div>
             ))}
           </div>
-          <p className="text-white/60 leading-relaxed max-w-xl mx-auto mb-6">
+          <p className="text-white/60 leading-relaxed max-w-xl mb-6 text-left">
             The bootcamp exceeded all expectations; generating over 800
             registrations and approximately 500 physical attendees for a venue
             with a 300-seat capacity. The event reached overflow status,
@@ -535,22 +535,19 @@ const CaseStudyYouthEquip = () => (
             style={{ background: "rgba(1,5,202,0.04)" }}
           >
             <SectionLabel>Key Takeaway</SectionLabel>
-            <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+            <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-8">
               Even with zero initial awareness and a tight budget, a
               well-structured event marketing strategy can rapidly mobilize an
-              audience and deliver a high-impact experience. Through strategic
-              promotion, digital funnels, and coordinated execution, EventFlow
+              audience and deliver a high-impact experience. 
+            </p>
+             <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed">
+             Through strategic promotion, digital funnels, and coordinated execution, EventFlow
               helped transform the Youth Equip Bootcamp from an uncertain launch
               into a fully attended and highly engaging event.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Footer note */}
-        <p className="text-center text-xs italic text-[hsl(252,100%,6%)]/30">
-          This project was executed by the same creative team that now operates
-          as EventFlow.
-        </p>
       </div>
     </section>
 
@@ -564,10 +561,12 @@ const CaseStudyYouthEquip = () => (
           <h2 className="font-display text-3xl md:text-4xl text-white mb-4">
             Planning an Event?
           </h2>
-          <p className="text-white/60 mb-8 leading-relaxed">
+          <p className="text-white/60 mb-8 leading-relaxed mb-8">
             Whether you're organizing a conference, bootcamp, workshop, or
             community event, the difference between an average turnout and a
             packed venue often comes down to the right marketing system.
+          </p>
+          <p className="text-white/60 mb-8 leading-relaxed">
             EventFlow helps event organizers structure their promotion, build
             audience momentum, and execute successful events from start to
             finish.
