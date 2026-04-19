@@ -209,7 +209,7 @@ const CaseStudyYouthEquip = () => (
     loop
     controls
     playsInline
-    className="w-full h-full object-cover object-[center_30%] rounded-2xl"
+    className="w-full h-full object-cover object-[center_40%] rounded-2xl"
   >
   </video>
           </div>
