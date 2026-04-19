@@ -250,7 +250,7 @@ const Index = () => {
     </p>
   </div>
   <div
-    className="flex gap-6 overflow-x-scroll no-scrollbar pl-4 md:pl-8 lg:pl-[max(2rem,calc((100vw-1280px)/2+2rem))]"
+    className="flex gap-6 overflow-x-scroll no-scrollbar pl-4 md:pl-8 lg:pl-[max(2rem,calc((100vw-1280px)/2+2rem))] pr-4"
     style={{ scrollSnapType: "x mandatory" }}
   >
     {caseStudies.map((study, idx) => (
