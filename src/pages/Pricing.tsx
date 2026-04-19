@@ -225,7 +225,7 @@ const Pricing = () => {
               <p className="text-white/60 mb-8">
                 We'll help you determine the best growth path based on: your event size, revenue goal, audience type, and timeline.
               </p>
-              <a href={STRATEGY_EMAIL}>
+              <a href={WHATSAPP}>
                 <CTAButton variant="primary">Send Us a Message Now</CTAButton>
               </a>
             </div>
