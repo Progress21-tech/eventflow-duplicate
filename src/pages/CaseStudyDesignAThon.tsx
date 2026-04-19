@@ -177,7 +177,7 @@ const CaseStudyDesignAThon = () => (
         <AnimatedSection>
           <SectionLabel>Overview</SectionLabel>
           <p className="text-[hsl(252,100%,6%)]/80 leading-relaxed mb-4">
-            Designerthon is a 12-hour non-stop virtual design exhibition, where
+            DesignAThon is a 12-hour non-stop virtual design exhibition, where
             top designers share their live process, tools, and real-world
             workflows with a growing community of creatives.
           </p>
@@ -445,11 +445,6 @@ const CaseStudyDesignAThon = () => (
           </div>
         </AnimatedSection>
 
-        {/* Footer note */}
-        <p className="text-center text-xs italic text-[hsl(252,100%,6%)]/30">
-          This project was executed by the same creative team that now operates
-          as EventFlow.
-        </p>
       </div>
     </section>
 
