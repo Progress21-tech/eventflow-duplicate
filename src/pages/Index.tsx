@@ -18,6 +18,7 @@ import logo2 from "@/assets/logo2-removed-bg.png";
 import logo3 from "@/assets/logo3-removed-bg.png";
 
 const logos = [logo1, logo2, logo3];
+const marqueeLogos = [...logos, ...logos, ...logos, ...logos];
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request";
@@ -284,15 +285,15 @@ const Index = () => {
   </AnimatedSection>
   <div className="relative overflow-hidden">
     <div className="flex marquee-track w-max">
-      {[...logos, ...logos].map((logo, i) => (
+      {marqueeLogos.map((logo, i) => (
         <div
           key={i}
-          className="flex-shrink-0 mx-6 w-32 h-12 flex items-center justify-center"
+          className="flex-shrink-0 mx-10 w-40 h-16 flex items-center justify-center"
         >
           <img
             src={logo}
             alt={`client logo ${i + 1}`}
-            className="max-h-10 max-w-[120px] object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
+            className="max-h-14 max-w-[150px] object-contain opacity-60 hover:opacity-100 transition-opacity duration-300"
           />
         </div>
       ))}
