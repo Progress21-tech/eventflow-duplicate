@@ -7,6 +7,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 {/* Import Images*/}
 import eventPhoto from "@/assets//event2.jpg";
 
+{/* Import Videos*/}
+import youthVideo from "@/assets/youthequipbootcamp.mp4";
 
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
@@ -200,13 +202,13 @@ const CaseStudyYouthEquip = () => (
 
         <AnimatedSection>
           <div className="w-full h-[400px] rounded-2xl overflow-hidden">
-            <iframe
-              src="@/assets/youthequipbootcamp.mp4"
+            <video
+              src={youthVideo}
               width="100%"
               height="100%"
               allow="autoplay"
               className="rounded-2xl"
-            ></iframe>
+            ></video>
           </div>
         </AnimatedSection>
 
