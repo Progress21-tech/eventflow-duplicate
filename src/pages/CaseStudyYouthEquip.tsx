@@ -201,7 +201,7 @@ const CaseStudyYouthEquip = () => (
         <AnimatedSection>
           <div className="w-full h-[400px] rounded-2xl overflow-hidden">
             <iframe
-              src="https://drive.google.com/file/d/10EoWAAhqk1mWWh5c7gQ6Ke-jKgV4EnH9/preview"
+              src="@/assets/youthequipbootcamp.mp4"
               width="100%"
               height="100%"
               allow="autoplay"
