@@ -13,9 +13,9 @@ import retireYoungImage from "@/assets/retire-young.jpg";
 import youthEquipImage from "@/assets/youth-equip.jpg";
 
 //Import Social Proofs Logos of Companies that have been worked with
-import logo1 from "@/assets/logo1.jpg";
-import logo2 from "@/assets/logo2.jpg";
-import logo3 from "@/assets/logo3.jpg";
+import logo1 from "@/assets/logo1-removed-bg.png";
+import logo2 from "@/assets/logo2-removed-bg.png";
+import logo3 from "@/assets/logo3-removed-bg.png";
 
 const logos = [logo1, logo2, logo3];
 
