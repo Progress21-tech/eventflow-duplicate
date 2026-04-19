@@ -201,15 +201,17 @@ const CaseStudyYouthEquip = () => (
         </AnimatedSection>
 
         <AnimatedSection>
-          <div className="w-full h-[400px] rounded-2xl overflow-hidden">
-            <video
-              src={youthVideo}
-              width="100%"
-              height="100%"
-              allow="autoplay"
-              controls
-              className="rounded-2xl"
-            ></video>
+         <div className="w-full h-[400px] rounded-2xl overflow-hidden">
+  <video
+    src={youthVideo}
+    autoPlay
+    muted
+    loop
+    controls
+    playsInline
+    className="w-full h-full object-cover object-top rounded-2xl"
+  >
+  </video>
           </div>
         </AnimatedSection>
 
