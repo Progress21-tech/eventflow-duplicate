@@ -229,7 +229,7 @@ const Index = () => {
               variants={fadeUp}
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
-              <a href={STRATEGY_EMAIL}>
+              <a href={WHATSAPP}>
                 <CTAButton variant="primary">Book a Strategy Call</CTAButton>
               </a>
               <Link to="/services">
@@ -554,7 +554,7 @@ const Index = () => {
               into attendance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={STRATEGY_EMAIL}>
+              <a href={WHATSAPP}>
                 <CTAButton variant="primary">Book a Strategy Call</CTAButton>
               </a>
               <Link to="/services">
