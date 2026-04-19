@@ -24,6 +24,8 @@ const marqueeLogos = [...logos, ...logos, ...logos, ...logos];
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request";
 
+const WHATSAPP = "https://api.whatsapp.com/send?phone=2348154356486&text=Hi%20EventFlow%2C%0A%0AI%27m%20interested%20in%20your%20event%20marketing%20services.%0A%0AHow%20do%20we%20get%20started%3F";
+
 const stagger = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.12 } },
