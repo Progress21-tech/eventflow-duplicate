@@ -15,7 +15,7 @@ import designAThonImage from "@/assets/design-a-thon-overview-1.jpg";
 
 //Import Social Proofs Logos of Companies that have been worked with
 import logo1 from "@/assets/logo1-removed-bg.png";
-import logo2 from "@/assets/logo2-removed-bg.png";
+import logo2 from "@/assets/logo2-removed-bg-updated.png";
 import logo3 from "@/assets/logo3-removed-bg.png";
 
 const logos = [logo1, logo2, logo3];
