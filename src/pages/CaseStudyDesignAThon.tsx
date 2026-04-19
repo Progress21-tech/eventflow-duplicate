@@ -4,6 +4,10 @@ import { ChevronRight } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 
+import img1 from "@/assets/design-a-thon-overview-1.jpg";
+import img2 from "@/assets/design-a-thon-overview-2.jpg";
+
+
 const STRATEGY_EMAIL =
   "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
 
@@ -176,7 +180,7 @@ const CaseStudyDesignAThon = () => (
       className="rounded-2xl overflow-hidden"
     >
       <img
-        src="/assets/design-a-thon-overview-1.jpg"
+        src={img1}
         alt="Design-A-Thon 1.0"
         className="w-full h-72 object-cover"
       />
@@ -189,7 +193,7 @@ const CaseStudyDesignAThon = () => (
       className="rounded-2xl overflow-hidden"
     >
       <img
-        src="/assets/design-a-thon-overview-2.jpg"
+        src={img2}
         alt="Design-A-Thon 2.0"
         className="w-full h-72 object-cover"
       />
@@ -224,7 +228,7 @@ const CaseStudyDesignAThon = () => (
     className="rounded-2xl overflow-hidden"
   >
     <img
-      src="/assets/design-a-thon-overview-1.jpg"
+      src={img1}
       alt="Design-A-Thon Overview"
       className="w-full h-64 object-cover"
     />
@@ -237,7 +241,7 @@ const CaseStudyDesignAThon = () => (
     className="rounded-2xl overflow-hidden"
   >
     <img
-      src="/assets/design-a-thon-overview-2.jpg"
+      src={img2}
       alt="Design-A-Thon Overview"
       className="w-full h-64 object-cover"
     />
