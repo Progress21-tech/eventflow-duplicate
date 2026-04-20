@@ -138,10 +138,53 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Thank you! Our team will reach out within 12 hours.");
-  };
+  const [isSubmitting, setIsSubmitting] = useState(false);
+const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        event_type: formData.eventType,
+        event_date: formData.eventDate,
+        event_mode: formData.eventMode,
+        budget: formData.budget,
+        description: formData.description,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setSubmitStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        eventType: "",
+        eventDate: "",
+        eventMode: "",
+        budget: "",
+        description: "",
+      });
+    } else {
+      setSubmitStatus("error");
+    }
+  } catch (error) {
+    setSubmitStatus("error");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <PageLayout>
@@ -715,9 +758,25 @@ const Index = () => {
                   }
                 />
               </div>
-              <CTAButton variant="primary" type="submit" className="w-full">
-                Submit Event Details
-              </CTAButton>
+              <CTAButton
+  variant="primary"
+  type="submit"
+  className="w-full"
+  disabled={isSubmitting}
+>
+  {isSubmitting ? "Sending..." : "Submit Event Details"}
+</CTAButton>
+
+{submitStatus === "success" && (
+  <p className="text-green-400 text-sm text-center mt-2">
+    ✅ Submitted! We'll reach out within 12 hours.
+  </p>
+)}
+{submitStatus === "error" && (
+  <p className="text-red-400 text-sm text-center mt-2">
+    ❌ Something went wrong. Please try again.
+  </p>
+)}
             </form>
           </AnimatedSection>
         </div>
