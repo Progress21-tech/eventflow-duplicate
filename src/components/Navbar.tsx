@@ -118,7 +118,7 @@ const Navbar = () => {
             </div>
 
             <a
-              href={STRATEGY_EMAIL}
+              href={WHATSAPP}
               className="bg-ef-red text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-[1.03] glow-red hover:shadow-[0_0_30px_rgba(223,0,0,0.4)]"
             >
               Book a Strategy Call
@@ -193,7 +193,7 @@ const Navbar = () => {
             </AnimatePresence>
 
             <a
-              href={STRATEGY_EMAIL}
+              href={WHATSAPP}
               onClick={() => setMobileOpen(false)}
               className="bg-ef-red text-white font-semibold px-5 py-3 rounded-full mt-2 transition-all duration-300 hover:scale-[1.03] glow-red text-center"
             >
