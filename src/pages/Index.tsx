@@ -766,38 +766,39 @@ const handleSubmit = async (e: React.FormEvent) => {
 >
   {isSubmitting ? "Sending..." : "Submit Event Details"}
 </CTAButton>
-
-{submitStatus === "success" ? (
-  <div className="glass-card rounded-2xl p-10 md:p-16 text-center space-y-6">
-    <div className="w-16 h-16 rounded-full bg-green-400/10 flex items-center justify-center mx-auto">
-      <Check size={32} className="text-green-400" />
+              <AnimatedSection delay={0.2}>
+  {submitStatus === "success" ? (
+    <div className="glass-card rounded-2xl p-10 md:p-16 text-center space-y-6">
+      <div className="w-16 h-16 rounded-full bg-green-400/10 flex items-center justify-center mx-auto">
+        <Check size={32} className="text-green-400" />
+      </div>
+      <h3 className="font-display text-2xl md:text-3xl text-white">
+        Thank you! We'll get in touch shortly.
+      </h3>
+      <p className="text-white/40 text-sm">Expected response time: within 12 hours.</p>
+      <button
+        onClick={() => setSubmitStatus("idle")}
+        className="text-sm text-white/50 hover:text-white underline transition-colors"
+      >
+        Submit another inquiry
+      </button>
     </div>
-    <h3 className="font-display text-2xl md:text-3xl text-white">
-       Thank you for sharing your event details with us. We'll get in touch shortly.
-    </h3>
-    <p className="text-white/40 text-sm">
-      Expected response time: within 12 hours.
-    </p>
-    <button
-      onClick={() => setSubmitStatus("idle")}
-      className="text-sm text-white/50 hover:text-white underline transition-colors"
-    >
-      Submit another inquiry
-    </button>
-  </div>
-) : (
-  <form
-    onSubmit={handleSubmit}
-    className="glass-card rounded-2xl p-6 md:p-10 space-y-5"
-  >
-    {/* all your existing form fields stay here unchanged */}
-  </form>
-)}
-{submitStatus === "error" && (
-  <p className="text-red-400 text-sm text-center mt-2">
-    ❌ Something went wrong. Please try again.
-  </p>
-)}
+  ) : (
+    <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-6 md:p-10 space-y-5">
+      {/* all your form fields here */}
+
+      <CTAButton variant="primary" type="submit" className="w-full" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Submit Event Details"}
+      </CTAButton>
+
+      {submitStatus === "error" && (
+        <p className="text-red-400 text-sm text-center mt-2">
+          ❌ Something went wrong. Please try again.
+        </p>
+      )}
+    </form>
+  )}
+</AnimatedSection>
             </form>
           </AnimatedSection>
         </div>
