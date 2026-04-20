@@ -164,6 +164,8 @@ const handleSubmit = async (e: React.FormEvent) => {
 
     const data = await response.json();
 
+    console.log("Web3Forms response:", data);
+
     if (data.success) {
       setSubmitStatus("success");
       setFormData({
