@@ -144,7 +144,7 @@ const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
-
+  console.log("Access key:", import.meta.env.VITE_WEB3FORMS_KEY);
   try {
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
