@@ -106,7 +106,7 @@ const Pricing = () => {
               Choose the level of support that fits your event's ambition. From growth sprints to full-scale event marketing systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <a href={STRATEGY_EMAIL}><CTAButton variant="primary">Book a Strategy Call</CTAButton></a>
+              <a href={WHATSAPP}><CTAButton variant="primary">Book a Strategy Call</CTAButton></a>
               <CTAButton variant="ghost" onClick={() => document.getElementById("packages")?.scrollIntoView({ behavior: "smooth" })}>
                 Explore Packages
               </CTAButton>
