@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import whatsappIcon from "@/assets/whatsapp.png";
+import whatsappIcon from "@/pages/whatsapp.png";
 
 const WHATSAPP_NUMBER = "2348154356486";
 const DEFAULT_MESSAGE = "Hi EventFlow, I'm interested in your event marketing services. How do we get started?";
