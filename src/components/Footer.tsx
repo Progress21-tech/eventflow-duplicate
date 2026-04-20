@@ -46,7 +46,7 @@ const Footer = () => (
         <div className="flex flex-col gap-3">
           <h4 className="text-white font-semibold text-sm mb-1">Contact</h4>
           <a href="tel:08154356486" className="text-white/60 text-sm hover:text-white transition-colors">08154356486</a>
-          <a href="mailto:team.eventflow@gmail.com" className="text-white/60 text-sm hover:text-white transition-colors">team.eventflow@gmail.com</a>
+          <a href="mailto:hello@eventflowafrica.com" className="text-white/60 text-sm hover:text-white transition-colors">hello@eventflowafrica.com</a>
 
           <h4 className="text-white font-semibold text-sm mt-4 mb-1">Follow Us</h4>
           <div className="flex gap-4">
@@ -67,7 +67,7 @@ const Footer = () => (
       </div>
 
       <div className="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p className="text-white/40 text-xs">© EventFlow. All rights reserved.</p>
+        <p className="text-white/40 text-xs">©2026 EventFlow. All rights reserved.</p>
         <div className="flex gap-6">
           <span className="text-white/40 text-xs hover:text-white/60 cursor-pointer transition-colors">Privacy Policy</span>
           <span className="text-white/40 text-xs hover:text-white/60 cursor-pointer transition-colors">Terms</span>
