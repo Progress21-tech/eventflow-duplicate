@@ -6,6 +6,7 @@ import CTAButton from "@/components/CTAButton";
 
 const STRATEGY_EMAIL = "mailto:team.eventflow@gmail.com?subject=Strategy%20Call%20Request&body=Hi%20EventFlow%2C%20I%20would%20like%20to%20book%20a%20strategy%20call.";
 
+const WHATSAPP = "https://api.whatsapp.com/send?phone=2348154356486&text=Hi%20EventFlow%2C%0A%0AI%27m%20interested%20in%20your%20event%20marketing%20services.%0A%0AHow%20do%20we%20get%20started%3F";
 const faqs = [
   { q: "What exactly does EventFlow do?", a: "EventFlow is an event marketing and growth agency. We help event organizers, conferences, bootcamps, and brands build structured marketing systems that increase attendance and revenue. We don't just design flyers. We build strategy, funnels, automation, and campaigns that fill seats." },
   { q: "Are you event planners?", a: "No. We do not handle physical logistics like venue booking, catering, decoration, or stage setup. We focus on marketing, positioning, automation, and campaign execution — the growth engine behind your event." },
@@ -118,7 +119,7 @@ const FAQ = () => {
             <p className="text-ef-navy/60 text-sm mb-5">
               Still have questions? We're happy to help.
             </p>
-            <a href={STRATEGY_EMAIL}>
+            <a href={WHATSAPP}>
               <CTAButton variant="primary">Book a Strategy Call</CTAButton>
             </a>
           </AnimatedSection>
