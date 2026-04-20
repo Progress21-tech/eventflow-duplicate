@@ -4,7 +4,7 @@ import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTAButton from "@/components/CTAButton";
 
-const STRATEGY_EMAIL = "https://wa.me/2348154356486?text=Hi%20EventFlow%2C%20I'm%20interested%20in%20learning%20more%20about%20your%20event%20growth%20services.%20Can%20we%20schedule%20a%20strategy%20call%3F";
+const WHATSAPP = "https://wa.me/2348154356486?text=Hi%20EventFlow%2C%20I'm%20interested%20in%20learning%20more%20about%20your%20event%20growth%20services.%20Can%20we%20schedule%20a%20strategy%20call%3F";
 
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.15 } } };
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
@@ -161,7 +161,7 @@ const Pricing = () => {
                   <p className="text-white/40 text-xs mb-1">Outcome:</p>
                   <p className="text-white/70 text-sm mb-4">{plan.outcome}</p>
                   
-                  <a href={STRATEGY_EMAIL} className="w-full">
+                  <a href={WHATSAPP} className="w-full">
                     <CTAButton
                       variant={plan.ctaVariant}
                       className="w-full"
