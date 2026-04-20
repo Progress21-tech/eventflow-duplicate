@@ -609,200 +609,161 @@ const handleSubmit = async (e: React.FormEvent) => {
       </section>
 
       {/* Inquiry Form */}
-      <section className="bg-ef-navy py-20 md:py-28">
-        <div className="container mx-auto max-w-2xl">
-          <AnimatedSection className="text-center mb-10">
-            <h2 className="font-display text-3xl md:text-4xl text-white mb-4">
-              Not Ready to Book a Call Yet?
-            </h2>
-            <p className="text-white/70">
-              Tell us about your event and our team will reach out with next
-              steps within 12 hours.
-            </p>
-          </AnimatedSection>
-          <AnimatedSection delay={0.2}>
-            <form
-              onSubmit={handleSubmit}
-              className="glass-card rounded-2xl p-6 md:p-10 space-y-5"
-            >
-              {[
-                { label: "Full Name", name: "name", type: "text" },
-                { label: "Email Address", name: "email", type: "email" },
-                { label: "Phone Number", name: "phone", type: "tel" },
-              ].map((field) => (
-                <div key={field.name}>
-                  <label className="text-white/70 text-sm mb-2 block">
-                    {field.label}
-                  </label>
-                  <input
-                    type={field.type}
-                    required
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
-                    value={formData[field.name as keyof typeof formData]}
-                    onChange={(e) =>
-                      setFormData({ ...formData, [field.name]: e.target.value })
-                    }
-                  />
-                </div>
-              ))}
-              <div>
-                <label className="text-white/70 text-sm mb-2 block">
-                  Event Type
-                </label>
-                <select
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
-                  value={formData.eventType}
-                  onChange={(e) =>
-                    setFormData({ ...formData, eventType: e.target.value })
-                  }
-                >
-                  <option value="" className="bg-ef-navy">
-                    Select event type
-                  </option>
-                  {[
-                    "Conference",
-                    "Concert",
-                    "Bootcamp",
-                    "Exhibition",
-                    "Workshop/Training",
-                    "Corporate Event",
-                  ].map((t) => (
-                    <option key={t} value={t} className="bg-ef-navy">
-                      {t}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="text-white/70 text-sm mb-2 block">
-                  Expected Event Date
-                </label>
-                <input
-                  type="date"
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
-                  value={formData.eventDate}
-                  onChange={(e) =>
-                    setFormData({ ...formData, eventDate: e.target.value })
-                  }
-                />
-              </div>
-              <div>
-                <label className="text-white/70 text-sm mb-2 block">
-                  Event Mode
-                </label>
-                <div className="flex gap-4">
-                  {["Physical", "Virtual", "Hybrid"].map((mode) => (
-                    <label
-                      key={mode}
-                      className="flex items-center gap-2 cursor-pointer"
-                    >
-                      <input
-                        type="radio"
-                        name="eventMode"
-                        value={mode}
-                        checked={formData.eventMode === mode}
-                        onChange={(e) =>
-                          setFormData({
-                            ...formData,
-                            eventMode: e.target.value,
-                          })
-                        }
-                        className="accent-ef-blue"
-                      />
-                      <span className="text-white/70 text-sm">{mode}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <label className="text-white/70 text-sm mb-2 block">
-                  Marketing Budget Range
-                </label>
-                <select
-                  required
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
-                  value={formData.budget}
-                  onChange={(e) =>
-                    setFormData({ ...formData, budget: e.target.value })
-                  }
-                >
-                  <option value="" className="bg-ef-navy">
-                    Select budget range
-                  </option>
-                  {[
-                    "Under ₦100,000",
-                    "₦100,000–₦500,000",
-                    "₦500,000–₦1,000,000",
-                    "₦1,000,000–₦5,000,000",
-                    "Above ₦5,000,000",
-                  ].map((b) => (
-                    <option key={b} value={b} className="bg-ef-navy">
-                      {b}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="text-white/70 text-sm mb-2 block">
-                  Event Description
-                </label>
-                <textarea
-                  rows={4}
-                  placeholder="Tell us about your event"
-                  className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all resize-none"
-                  value={formData.description}
-                  onChange={(e) =>
-                    setFormData({ ...formData, description: e.target.value })
-                  }
-                />
-              </div>
-              <CTAButton
-  variant="primary"
-  type="submit"
-  className="w-full"
-  disabled={isSubmitting}
->
-  {isSubmitting ? "Sending..." : "Submit Event Details"}
-</CTAButton>
-              <AnimatedSection delay={0.2}>
-  {submitStatus === "success" ? (
-    <div className="glass-card rounded-2xl p-10 md:p-16 text-center space-y-6">
-      <div className="w-16 h-16 rounded-full bg-green-400/10 flex items-center justify-center mx-auto">
-        <Check size={32} className="text-green-400" />
-      </div>
-      <h3 className="font-display text-2xl md:text-3xl text-white">
-        Thank you! We'll get in touch shortly.
-      </h3>
-      <p className="text-white/40 text-sm">Expected response time: within 12 hours.</p>
-      <button
-        onClick={() => setSubmitStatus("idle")}
-        className="text-sm text-white/50 hover:text-white underline transition-colors"
-      >
-        Submit another inquiry
-      </button>
-    </div>
-  ) : (
-    <form onSubmit={handleSubmit} className="glass-card rounded-2xl p-6 md:p-10 space-y-5">
-      {/* all your form fields here */}
-
-      <CTAButton variant="primary" type="submit" className="w-full" disabled={isSubmitting}>
-        {isSubmitting ? "Sending..." : "Submit Event Details"}
-      </CTAButton>
-
-      {submitStatus === "error" && (
-        <p className="text-red-400 text-sm text-center mt-2">
-          ❌ Something went wrong. Please try again.
-        </p>
-      )}
-    </form>
-  )}
-</AnimatedSection>
-            </form>
-          </AnimatedSection>
+<section className="bg-ef-navy py-20 md:py-28">
+  <div className="container mx-auto max-w-2xl">
+    <AnimatedSection className="text-center mb-10">
+      <h2 className="font-display text-3xl md:text-4xl text-white mb-4">
+        Not Ready to Book a Call Yet?
+      </h2>
+      <p className="text-white/70">
+        Tell us about your event and our team will reach out with next
+        steps within 12 hours.
+      </p>
+    </AnimatedSection>
+    <AnimatedSection delay={0.2}>
+      {submitStatus === "success" ? (
+        <div className="glass-card rounded-2xl p-10 md:p-16 text-center space-y-6">
+          <div className="w-16 h-16 rounded-full bg-green-400/10 flex items-center justify-center mx-auto">
+            <Check size={32} className="text-green-400" />
+          </div>
+          <h3 className="font-display text-2xl md:text-3xl text-white">
+            Thank you! We'll get in touch shortly.
+          </h3>
+          <p className="text-white/40 text-sm">Expected response time: within 12 hours.</p>
+          <button
+            onClick={() => setSubmitStatus("idle")}
+            className="text-sm text-white/50 hover:text-white underline transition-colors"
+          >
+            Submit another inquiry
+          </button>
         </div>
-      </section>
+      ) : (
+        <form
+          onSubmit={handleSubmit}
+          className="glass-card rounded-2xl p-6 md:p-10 space-y-5"
+        >
+          {[
+            { label: "Full Name", name: "name", type: "text" },
+            { label: "Email Address", name: "email", type: "email" },
+            { label: "Phone Number", name: "phone", type: "tel" },
+          ].map((field) => (
+            <div key={field.name}>
+              <label className="text-white/70 text-sm mb-2 block">
+                {field.label}
+              </label>
+              <input
+                type={field.type}
+                required
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
+                value={formData[field.name as keyof typeof formData]}
+                onChange={(e) =>
+                  setFormData({ ...formData, [field.name]: e.target.value })
+                }
+              />
+            </div>
+          ))}
+          <div>
+            <label className="text-white/70 text-sm mb-2 block">
+              Event Type
+            </label>
+            <select
+              required
+              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
+              value={formData.eventType}
+              onChange={(e) =>
+                setFormData({ ...formData, eventType: e.target.value })
+              }
+            >
+              <option value="" className="bg-ef-navy">Select event type</option>
+              {["Conference", "Concert", "Bootcamp", "Exhibition", "Workshop/Training", "Corporate Event"].map((t) => (
+                <option key={t} value={t} className="bg-ef-navy">{t}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="text-white/70 text-sm mb-2 block">
+              Expected Event Date
+            </label>
+            <input
+              type="date"
+              required
+              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
+              value={formData.eventDate}
+              onChange={(e) =>
+                setFormData({ ...formData, eventDate: e.target.value })
+              }
+            />
+          </div>
+          <div>
+            <label className="text-white/70 text-sm mb-2 block">Event Mode</label>
+            <div className="flex gap-4">
+              {["Physical", "Virtual", "Hybrid"].map((mode) => (
+                <label key={mode} className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="eventMode"
+                    value={mode}
+                    checked={formData.eventMode === mode}
+                    onChange={(e) =>
+                      setFormData({ ...formData, eventMode: e.target.value })
+                    }
+                    className="accent-ef-blue"
+                  />
+                  <span className="text-white/70 text-sm">{mode}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+          <div>
+            <label className="text-white/70 text-sm mb-2 block">
+              Marketing Budget Range
+            </label>
+            <select
+              required
+              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all"
+              value={formData.budget}
+              onChange={(e) =>
+                setFormData({ ...formData, budget: e.target.value })
+              }
+            >
+              <option value="" className="bg-ef-navy">Select budget range</option>
+              {["Under ₦100,000", "₦100,000–₦500,000", "₦500,000–₦1,000,000", "₦1,000,000–₦5,000,000", "Above ₦5,000,000"].map((b) => (
+                <option key={b} value={b} className="bg-ef-navy">{b}</option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="text-white/70 text-sm mb-2 block">
+              Event Description
+            </label>
+            <textarea
+              rows={4}
+              placeholder="Tell us about your event"
+              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-ef-blue focus:shadow-[0_0_10px_rgba(1,5,202,0.3)] transition-all resize-none"
+              value={formData.description}
+              onChange={(e) =>
+                setFormData({ ...formData, description: e.target.value })
+              }
+            />
+          </div>
+          <CTAButton
+            variant="primary"
+            type="submit"
+            className="w-full"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Sending..." : "Submit Event Details"}
+          </CTAButton>
+          {submitStatus === "error" && (
+            <p className="text-red-400 text-sm text-center mt-2">
+              ❌ Something went wrong. Please try again.
+            </p>
+          )}
+        </form>
+      )}
+    </AnimatedSection>
+  </div>
+</section>
 
       <FAQSection />
     </PageLayout>
