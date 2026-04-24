@@ -103,17 +103,17 @@ const rotatingWords = [
 // Case Studies data
 const caseStudies = [
   {
-    title: "How to Retire Young and Rich Bootcamp",
+    title: "How Strategic Event Branding Helped a ₦150,000 High-Ticket Bootcamp Surpass Attendance Targets",
     image: retireYoungImage,
     link: "/case-study/retire-young-rich",
   },
   {
-    title: "Youth Equip Bootcamp",
+    title: "Filling a 300-Seat Bootcamp to Overflow Capacity in Just 5 Weeks",
     image: youthEquipImage,
     link: "/case-study/youth-equip-bootcamp",
   },
   {
-    title: "Design-A-Thon 1.0 & 2.0",
+    title: "How We Generated 1,000+ Registrations in Under 12 Days; Twice. Without Ads.",
     image: designAThonImage,
     link: "/case-study/design-a-thon",
   },

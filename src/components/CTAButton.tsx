@@ -6,9 +6,10 @@ interface CTAButtonProps {
   onClick?: () => void;
   className?: string;
   type?: "button" | "submit";
+  disabled?: boolean;
 }
 
-const CTAButton = ({ children, variant = "primary", onClick, className = "", type = "button" }: CTAButtonProps) => {
+const CTAButton = ({ children, variant = "primary", onClick, className = "", type = "button", disabled }: CTAButtonProps) => {
   const base = "font-semibold px-7 py-3 rounded-full transition-all duration-300 hover:scale-[1.03] text-sm md:text-base inline-flex items-center justify-center gap-2";
 
   const variants = {
@@ -18,7 +19,7 @@ const CTAButton = ({ children, variant = "primary", onClick, className = "", typ
   };
 
   return (
-    <button type={type} onClick={onClick} className={`${variants[variant]} ${className}`}>
+    <button type={type} onClick={onClick} disabled={disabled} className={`${variants[variant]} ${className}`}>
       {children}
     </button>
   );
