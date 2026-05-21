@@ -1,0 +1,26 @@
+# EventFlow
+
+EventFlow is a full-service event marketing and promotion company based in Nigeria.
+
+## What We Do
+
+- **Event Management** – End-to-end planning and execution of events
+- **Marketing & Promotion** – Strategic marketing to maximize your event's reach
+- **Design & Creative Ads** – Eye-catching visuals and advertisement creatives
+- **WhatsApp Funnel** – Automated WhatsApp marketing funnels to drive ticket sales and engagement
+- **Business Advertising** – Run targeted ads for your business across platforms
+
+## Project Info
+
+**Live URL**: eventflow-duplicate.vercel.app
+
+## Development
+
+This project was built by Eventflow Team and React + Vite.
+
+### Editing the Code
+
+You can edit this project in several ways:
+
+- **GitHub** – Edit files directly on GitHub and changes will auto-deploy via Vercel
+- **Local IDE** – Clone the repo and run locally with `npm install && npm run dev`
